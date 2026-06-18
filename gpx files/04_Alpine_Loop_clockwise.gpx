@@ -4,15 +4,15 @@
     <name>Silverton</name>
     <desc>Fuel + supplies before the loop</desc>
   </wpt>
-  <wpt lat="37.7479" lon="-107.6896">
+  <wpt lat="37.7475" lon="-107.6832">
     <name>Molas Lake</name>
     <desc>MDH overlook</desc>
   </wpt>
-  <wpt lat="37.9289" lon="-107.5722">
+  <wpt lat="37.9311" lon="-107.5715">
     <name>Animas Forks</name>
     <desc>Ghost town hub</desc>
   </wpt>
-  <wpt lat="37.9722" lon="-107.5447">
+  <wpt lat="37.9756" lon="-107.5845">
     <name>Engineer Pass</name>
     <desc>12,800 ft - climb clockwise</desc>
   </wpt>
@@ -20,11 +20,11 @@
     <name>Lake City</name>
     <desc>Resupply / fuel</desc>
   </wpt>
-  <wpt lat="37.9356" lon="-107.5036">
+  <wpt lat="37.9339" lon="-107.5378">
     <name>Cinnamon Pass</name>
     <desc>12,640 ft</desc>
   </wpt>
-  <wpt lat="37.9258" lon="-107.5044">
+  <wpt lat="37.9203" lon="-107.5164">
     <name>American Basin TH</name>
     <desc>Handies Peak trailhead</desc>
   </wpt>
@@ -32,7 +32,7 @@
     <name>Handies Peak</name>
     <desc>14,058 ft summit</desc>
   </wpt>
-  <wpt lat="37.8089" lon="-107.7717">
+  <wpt lat="37.8061" lon="-107.7742">
     <name>South Mineral dispersed</name>
     <desc>Sheltered camp option</desc>
   </wpt>
@@ -40,12 +40,12 @@
     <name>Alpine Loop clockwise</name>
     <trkseg>
       <trkpt lat="37.8119" lon="-107.6645"></trkpt>
-      <trkpt lat="37.9289" lon="-107.5722"></trkpt>
-      <trkpt lat="37.9722" lon="-107.5447"></trkpt>
+      <trkpt lat="37.9311" lon="-107.5715"></trkpt>
+      <trkpt lat="37.9756" lon="-107.5845"></trkpt>
       <trkpt lat="38.0303" lon="-107.3151"></trkpt>
-      <trkpt lat="37.9356" lon="-107.5036"></trkpt>
-      <trkpt lat="37.9258" lon="-107.5044"></trkpt>
-      <trkpt lat="37.9289" lon="-107.5722"></trkpt>
+      <trkpt lat="37.9339" lon="-107.5378"></trkpt>
+      <trkpt lat="37.9203" lon="-107.5164"></trkpt>
+      <trkpt lat="37.9311" lon="-107.5715"></trkpt>
     </trkseg>
   </trk>
 </gpx>

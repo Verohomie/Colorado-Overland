@@ -45,20 +45,20 @@ def write(fname, waypoints, track_name, track_pts):
 
 # ── Day 1: Medano Pass Road ─────────────────────────────────────────
 write("01_Medano_Pass_Road.gpx",
-    [(37.7339, -105.5117, "GRSA Visitor Center", "Road report + airdown info"),
-     (37.7456, -105.5197, "Main Dunes Lot", "Dune access / Medano Creek"),
-     (37.6233, -105.5503, "Zapata Falls TH", "0.9 mi RT waterfall slot"),
-     (37.7385, -105.5106, "Pinon Flats CG", "Backup reservable campground"),
+    [(37.7337, -105.5107, "GRSA Visitor Center", "Road report + airdown info"),
+     (37.7356, -105.5108, "Main Dunes Lot", "Dune access / Medano Creek"),
+     (37.6216, -105.5595, "Zapata Falls TH", "0.9 mi RT waterfall slot"),
+     (37.7426, -105.5110, "Pinon Flats CG", "Backup reservable campground"),
      (37.82401, -105.45907, "Medano Pass camp (pin)", "Your dispersed site pin")],
     "Medano Pass Primitive Road",
-    [(37.7456, -105.5197), (37.78, -105.49), (37.82401, -105.45907), (37.8889, -105.43)])
+    [(37.7356, -105.5108), (37.78, -105.49), (37.82401, -105.45907), (37.8889, -105.43)])
 
 # ── Day 2: Conejos / Park Creek ─────────────────────────────────────
 write("02_Conejos_ParkCreek.gpx",
     [(37.13094, -106.34928, "Horca / FSR 250 (pin)", "Turn up the Conejos"),
      (37.348, -106.531, "Platoro", "Tiny village; seasonal fuel/food"),
      (37.356, -106.535, "Platoro Reservoir camp", "Night 2 - dispersed north shore"),
-     (37.347, -106.548, "Mix Lake CG", "Sheltered backup, 22 sites"),
+     (37.3583, -106.5381, "Mix Lake CG", "Sheltered backup, 22 sites"),
      (37.398, -106.585, "Stunner CG / Park Creek", "Toward Stunner Pass & FSR 380")],
     "Conejos FSR250 to Platoro Reservoir",
     [(37.13094, -106.34928), (37.25, -106.46), (37.348, -106.531),
@@ -80,28 +80,28 @@ write("03_Park_Creek_Rd.gpx",
 # ── Day 4-6: Alpine Loop (clockwise) ────────────────────────────────
 write("04_Alpine_Loop_clockwise.gpx",
     [(37.8119, -107.6645, "Silverton", "Fuel + supplies before the loop"),
-     (37.7479, -107.6896, "Molas Lake", "MDH overlook"),
-     (37.9289, -107.5722, "Animas Forks", "Ghost town hub"),
-     (37.9722, -107.5447, "Engineer Pass", "12,800 ft - climb clockwise"),
+     (37.7475, -107.6832, "Molas Lake", "MDH overlook"),
+     (37.9311, -107.5715, "Animas Forks", "Ghost town hub"),
+     (37.9756, -107.5845, "Engineer Pass", "12,800 ft - climb clockwise"),
      (38.0303, -107.3151, "Lake City", "Resupply / fuel"),
-     (37.9356, -107.5036, "Cinnamon Pass", "12,640 ft"),
-     (37.9258, -107.5044, "American Basin TH", "Handies Peak trailhead"),
+     (37.9339, -107.5378, "Cinnamon Pass", "12,640 ft"),
+     (37.9203, -107.5164, "American Basin TH", "Handies Peak trailhead"),
      (37.9131, -107.5042, "Handies Peak", "14,058 ft summit"),
-     (37.8089, -107.7717, "South Mineral dispersed", "Sheltered camp option")],
+     (37.8061, -107.7742, "South Mineral dispersed", "Sheltered camp option")],
     "Alpine Loop clockwise",
-    [(37.8119, -107.6645), (37.9289, -107.5722), (37.9722, -107.5447),
-     (38.0303, -107.3151), (37.9356, -107.5036), (37.9258, -107.5044),
-     (37.9289, -107.5722)])
+    [(37.8119, -107.6645), (37.9311, -107.5715), (37.9756, -107.5845),
+     (38.0303, -107.3151), (37.9339, -107.5378), (37.9203, -107.5164),
+     (37.9311, -107.5715)])
 
 # ── Day 6: Million Dollar Hwy (Silverton -> Ouray) ──────────────────
 write("06_Million_Dollar_Hwy.gpx",
     [(37.8119, -107.6645, "Silverton", "Start north on US-550"),
-     (37.8969, -107.7114, "Red Mountain Pass", "11,018 ft - mining ruins"),
+     (37.8989, -107.7120, "Red Mountain Pass", "11,018 ft - mining ruins"),
      (37.9889, -107.6603, "Bear Creek Falls overlook", "Roadside 227-ft falls"),
      (38.0228, -107.6712, "Ouray", "Quality Inn / hot springs"),
-     (38.0206, -107.6745, "Box Canon Falls", "285-ft slot falls")],
+     (38.0195, -107.6769, "Box Canon Falls", "285-ft slot falls")],
     "Million Dollar Highway Silverton to Ouray",
-    [(37.8119, -107.6645), (37.8969, -107.7114), (37.9889, -107.6603),
+    [(37.8119, -107.6645), (37.8989, -107.7120), (37.9889, -107.6603),
      (38.0228, -107.6712)])
 
 # ── Day 7-8: Rimrocker Trail ────────────────────────────────────────
@@ -137,7 +137,7 @@ write("00_Full_Trip_Overview.gpx",
     "Colorado Overland - full route",
     [(39.7392, -104.9903), (37.82401, -105.45907), (37.13094, -106.34928),
      (37.398, -106.585), (37.2987, -107.8723), (37.8119, -107.6645),
-     (37.9289, -107.5722), (38.0228, -107.6712), (38.4783, -107.8762),
+     (37.9311, -107.5715), (38.0228, -107.6712), (38.4783, -107.8762),
      (38.33, -108.88), (38.5733, -109.5498), (38.404384, -109.708790),
      (40.7608, -111.8910)])
 

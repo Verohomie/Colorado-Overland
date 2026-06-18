@@ -4,7 +4,7 @@
     <name>Silverton</name>
     <desc>Start north on US-550</desc>
   </wpt>
-  <wpt lat="37.8969" lon="-107.7114">
+  <wpt lat="37.8989" lon="-107.712">
     <name>Red Mountain Pass</name>
     <desc>11,018 ft - mining ruins</desc>
   </wpt>
@@ -16,7 +16,7 @@
     <name>Ouray</name>
     <desc>Quality Inn / hot springs</desc>
   </wpt>
-  <wpt lat="38.0206" lon="-107.6745">
+  <wpt lat="38.0195" lon="-107.6769">
     <name>Box Canon Falls</name>
     <desc>285-ft slot falls</desc>
   </wpt>
@@ -24,7 +24,7 @@
     <name>Million Dollar Highway Silverton to Ouray</name>
     <trkseg>
       <trkpt lat="37.8119" lon="-107.6645"></trkpt>
-      <trkpt lat="37.8969" lon="-107.7114"></trkpt>
+      <trkpt lat="37.8989" lon="-107.712"></trkpt>
       <trkpt lat="37.9889" lon="-107.6603"></trkpt>
       <trkpt lat="38.0228" lon="-107.6712"></trkpt>
     </trkseg>
