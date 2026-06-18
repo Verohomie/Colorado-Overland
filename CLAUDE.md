@@ -48,10 +48,13 @@ Hosting target: GitHub Pages or Render (static site).
 - **Day 2 camp = Platoro Reservoir** (resolved). Brad dropped the "Mamouth"
   reference; camp is the Platoro Reservoir north-shore dispersed area, with Mix
   Lake CG (1 mi W, 22 sites, treed) as the sheltered backup.
-- **OnX / TrailsOffroad trail data**: incorporating their detailed trail tracks
-  (Park Creek Rd #8613, Rim Rocker, Alpine Loop) needs login access — those
-  pages are behind auth. If Brad shares access (or exports GPX from his
-  accounts), drop the GPX into `gpx files/` and link it from the day pages.
+- **Days 3, 7, 8 enriched from Brad's TrailsOffroad PDFs** (Park Creek Rd #380 +
+  Rimrocker). Day 3 is now the Park Creek trail day over **Elwood Pass (11,631 ft,
+  not Stunner Pass)**; Day 7/8 use real Rimrocker waypoints (Dry Creek TH, Iron
+  Springs/Columbine CGs, Naturita fuel, Tabeguache crossing, Uravan, "Epic Campsite"
+  mi 98.6, Buckeye designated-only, rough WP59–63, Black Ridge). Mid-route coords in
+  `03_Park_Creek_Rd.gpx` and `07_Rimrocker_Trail.gpx` are **approximate** — Brad can
+  export exact GPX from his OnX/TrailsOffroad accounts and drop into `gpx files/`.
 - **Photos**: run `download_images.py` or hand-place per IMAGES.md.
 - **Route maps**: screenshot Google Maps/OnX per day → `images/dayN-map.png`.
 

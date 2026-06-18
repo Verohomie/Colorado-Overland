@@ -1,6 +1,8 @@
 # Colorado Overland — Handoff / Resume Notes
 
-_Last session: 2026-06-17. Resume here next time._
+_Updated 2026-06-18: Days 3/7/8 enrichment from the TrailsOffroad PDFs is DONE and pushed.
+The waypoint reference data below is retained for future tweaks. Remaining: photos +
+dayN-map.png screenshots; Brad to export exact OnX/TrailsOffroad GPX if he wants them swapped in._
 
 ## STATUS
 - ✅ Project built: `index.html` (cover + 9 days + reference), live Open-Meteo weather

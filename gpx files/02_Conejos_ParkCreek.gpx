@@ -21,14 +21,12 @@
     <desc>Toward Stunner Pass & FSR 380</desc>
   </wpt>
   <trk>
-    <name>Conejos FSR250 to Platoro Reservoir / Park Creek Rd 380</name>
+    <name>Conejos FSR250 to Platoro Reservoir</name>
     <trkseg>
       <trkpt lat="37.13094" lon="-106.34928"></trkpt>
       <trkpt lat="37.25" lon="-106.46"></trkpt>
       <trkpt lat="37.348" lon="-106.531"></trkpt>
       <trkpt lat="37.356" lon="-106.535"></trkpt>
-      <trkpt lat="37.398" lon="-106.585"></trkpt>
-      <trkpt lat="37.45" lon="-106.62"></trkpt>
     </trkseg>
   </trk>
 </gpx>

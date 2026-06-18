@@ -60,9 +60,22 @@ write("02_Conejos_ParkCreek.gpx",
      (37.356, -106.535, "Platoro Reservoir camp", "Night 2 - dispersed north shore"),
      (37.347, -106.548, "Mix Lake CG", "Sheltered backup, 22 sites"),
      (37.398, -106.585, "Stunner CG / Park Creek", "Toward Stunner Pass & FSR 380")],
-    "Conejos FSR250 to Platoro Reservoir / Park Creek Rd 380",
+    "Conejos FSR250 to Platoro Reservoir",
     [(37.13094, -106.34928), (37.25, -106.46), (37.348, -106.531),
-     (37.356, -106.535), (37.398, -106.585), (37.45, -106.62)])
+     (37.356, -106.535)])
+
+# ── Day 3: Park Creek Rd (FSR 380) over Elwood Pass ─────────────────
+# Coords approximate (TrailsOffroad #380); verify in OnX/Gaia.
+write("03_Park_Creek_Rd.gpx",
+    [(37.356, -106.535, "Platoro Reservoir camp", "Day 3 start"),
+     (37.398, -106.585, "Stunner Camp / FSR250 jct", "5 sites, toilet; pick up FSR 380"),
+     (37.47, -106.61, "Elwood Pass (approx)", "High point 11,631 ft; East Fork Rd spur"),
+     (37.50, -106.66, "Elwood Cabin (approx)", "Reservable 1911 cabin, Schinzel Flats"),
+     (37.55, -106.70, "Alpine/Mountain View camps", "Approx; high meadow sites"),
+     (37.585, -106.745, "Hwy 160 Trailhead (approx)", "North end SW of South Fork")],
+    "Park Creek Rd FSR 380 Stunner to Hwy 160",
+    [(37.356, -106.535), (37.398, -106.585), (37.47, -106.61),
+     (37.50, -106.66), (37.55, -106.70), (37.585, -106.745)])
 
 # ── Day 4-6: Alpine Loop (clockwise) ────────────────────────────────
 write("04_Alpine_Loop_clockwise.gpx",
@@ -93,11 +106,12 @@ write("06_Million_Dollar_Hwy.gpx",
 
 # ── Day 7-8: Rimrocker Trail ────────────────────────────────────────
 write("07_Rimrocker_Trail.gpx",
-    [(38.4783, -107.8762, "Montrose", "Full resupply + fuel"),
-     (38.2678, -108.5462, "Nucla", "Small-town fuel"),
-     (38.33, -108.88, "Paradox Valley Overlook", "Rim camp (scout)"),
-     (38.27, -108.88, "Buckeye Reservoir", "Sheltered established camp"),
-     (38.5733, -109.5498, "Moab", "Western end / resupply")],
+    [(38.4783, -107.8762, "Montrose", "Resupply + fuel before trail"),
+     (38.47, -107.95, "Dry Creek TH (approx)", "Rimrocker mi 0 - air down"),
+     (38.2678, -108.5462, "Nucla", "NO gas station - fuel in Naturita (CO-97)"),
+     (38.33, -108.88, "Epic Campsite (mi 98.6)", "Night 7 - Paradox rim (scout)"),
+     (38.27, -108.88, "Buckeye Reservoir (mi 107)", "DESIGNATED sites only - fills fast"),
+     (38.5733, -109.5498, "Moab (mi 160.7)", "Trail ends south side of town")],
     "Rimrocker Trail Montrose to Moab",
     [(38.4783, -107.8762), (38.2678, -108.5462), (38.33, -108.88),
      (38.27, -108.88), (38.45, -109.2), (38.5733, -109.5498)])
