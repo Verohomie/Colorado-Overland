@@ -12,6 +12,12 @@ Route maps (`day1-map.png` … `day9-map.png`): screenshot each day's Google Map
 directions (the “Open in Google Maps” button) or an OnX/Gaia map, and save with
 that name.
 
+**Done so far:** `day2-map.png`, `day3-map.png` (route screenshots), plus two TrailsOffroad
+waypoint maps wired into the day pages: `day3-trail.png` (Park Creek Rd #1–24) and
+`day7-trail.png` (Rimrocker #1–74).
+**Still needed:** `day1-map.png`, `day4-map.png`, `day5-map.png`, `day6-map.png`,
+`day7-map.png`, `day8-map.png`, `day9-map.png`.
+
 | File | Used for | Subject | Free image sources to scrape |
 |------|----------|---------|------------------------------|
 | `00.jpg` | Cover hero | San Juan Mountains / overall mood | [Commons: San Juan Mountains](https://commons.wikimedia.org/wiki/Category:San_Juan_Mountains) · [Commons: Colorado mountains](https://commons.wikimedia.org/wiki/Category:Mountains_of_Colorado) |
