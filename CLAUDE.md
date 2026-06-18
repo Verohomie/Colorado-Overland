@@ -45,10 +45,9 @@ Hosting target: GitHub Pages or Render (static site).
   per-day banner uses a `maps/dir/...` directions URL.
 
 ## Open items / to confirm with Brad
-- **Day 2 “Mamouth” camp**: no named feature called *Mamouth* matched on
-  FSR 250 / Park Creek Rd near Platoro. The guide centers Day 2's camp on the
-  Park Creek Rd / Stunner / Platoro dispersed area and flags it inline.
-  → Confirm the exact spot Brad meant and pin it precisely.
+- **Day 2 camp = Platoro Reservoir** (resolved). Brad dropped the "Mamouth"
+  reference; camp is the Platoro Reservoir north-shore dispersed area, with Mix
+  Lake CG (1 mi W, 22 sites, treed) as the sheltered backup.
 - **OnX / TrailsOffroad trail data**: incorporating their detailed trail tracks
   (Park Creek Rd #8613, Rim Rocker, Alpine Loop) needs login access — those
   pages are behind auth. If Brad shares access (or exports GPX from his
