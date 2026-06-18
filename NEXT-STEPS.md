@@ -1,8 +1,25 @@
 # Colorado Overland — Handoff / Resume Notes
 
-_Updated 2026-06-18: Days 3/7/8 enrichment from the TrailsOffroad PDFs is DONE and pushed.
-The waypoint reference data below is retained for future tweaks. Remaining: photos +
-dayN-map.png screenshots; Brad to export exact OnX/TrailsOffroad GPX if he wants them swapped in._
+_Updated 2026-06-18 (session 4). Everything below is DONE + pushed to GitHub (main).
+Waypoint reference data retained for future tweaks._
+
+## CURRENT STATE (resume here)
+- ✅ Days 3/7/8 enriched from TrailsOffroad PDFs (Park Creek/Elwood Pass + Rimrocker).
+- ✅ Pushed to GitHub `Verohomie/Colorado-Overland` (main). NOT on GitHub Pages yet (offered).
+- ✅ **Lat/long audit done** — 19 pins corrected vs TopoZone/NPS/14ers/recreation.gov.
+  Full before/after + flag-list in `VERIFY-PINS.md`. Worst were Treasure Falls (~2.3mi),
+  Engineer Pass (~2.1mi), Cinnamon Pass (~1.9mi), Black Canyon S-Rim (~1.8mi), Andrews Lake (~1.4mi).
+- ✅ Brad's 4 images incorporated: `day2-map.png`, `day3-map.png` (route screenshots),
+  `day3-trail.png` (Park Creek #1–24), `day7-trail.png` (Rimrocker #1–74).
+
+## STILL OPEN / NEXT
+- Route-map screenshots still needed: day1, day4, day5, day6, day7, day8, day9 `-map.png`
+  (Brad screenshots Google Maps/OnX; placeholders show until then). Tracked in IMAGES.md.
+- Flagged dispersed pins in `VERIFY-PINS.md` need Brad's visual confirm OR exact GPX export
+  from his OnX/TrailsOffroad accounts (drop into `gpx files/`, then I swap approximate tracks).
+- Offer still open: enable GitHub Pages (`gh`) to make it live.
+- Tidy (optional): `download_images.py` has dead `search_first_file()` (lines 34–54), unused.
+- Reminder given to Brad: rotate OnX/TrailsOffroad passwords (were pasted in chat; never stored).
 
 ## STATUS
 - ✅ Project built: `index.html` (cover + 9 days + reference), live Open-Meteo weather
