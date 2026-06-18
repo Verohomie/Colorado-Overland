@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorado Overland — June 21–29, 2026</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNiIgZmlsbD0iIzFBMUEyRSIvPjx0ZXh0IHg9IjE2IiB5PSIyMyIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjRTY3RTIyIj5DTzwvdGV4dD48L3N2Zz4=">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rust:#C0392B; --rust-dark:#922B21; --rust-pale:#F5E6E4;
+  --ember:#E67E22; --ember-pale:#FEF3E2;
+  --gold:#D4A017; --gold-pale:#FBF3D9;
+  --sand:#E8D5B7; --sand-dark:#C9A96E;
+  --sage:#5A7A56; --sage-pale:#EBF0EA;
+  --stone:#5D5C61; --stone-pale:#F0EDE8;
+  --night:#1A1A2E; --ink:#2C2C3A; --pine:#2D5016;
+  --sky:#2471A3; --sky-pale:#EBF5FB; --cream:#FAF8F3; --white:#FFF; --teal:#1A7A6E;
+  --alpine:#1F6FA8;
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-body:'Source Serif 4',Georgia,serif;
+  --font-mono:'JetBrains Mono',monospace;
+  --page-width:8.5in; --margin:0.6in;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{font-size:10.5pt;}
+body{font-family:var(--font-body);background:var(--stone-pale);color:var(--ink);line-height:1.6;overflow-x:hidden;}
+a{color:var(--sky);}
+.book{max-width:var(--page-width);margin:0 auto;background:var(--white);overflow-x:hidden;box-shadow:0 4px 40px rgba(0,0,0,.18);}
+
+/* COVER */
+.cover{background:var(--night);min-height:100vh;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+.cover-hero{width:100%;height:48vh;object-fit:cover;object-position:center 45%;display:block;opacity:.78;}
+.cover-gradient{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(26,26,46,.3) 0%,rgba(26,26,46,.1) 35%,rgba(26,26,46,.85) 60%,rgba(26,26,46,1) 100%);pointer-events:none;}
+.cover-content{position:relative;z-index:2;padding:var(--margin);padding-top:0;margin-top:-12vh;}
+.cover-eyebrow{font-family:var(--font-mono);font-size:8pt;color:var(--sand-dark);letter-spacing:.2em;text-transform:uppercase;margin-bottom:10px;}
+.cover-title{font-family:var(--font-display);font-size:50pt;font-weight:900;color:var(--white);line-height:1;margin-bottom:6px;}
+.cover-title span{color:var(--ember);}
+.cover-sub{font-size:13pt;font-weight:300;color:var(--sand);margin-bottom:18px;font-style:italic;}
+.cover-dates{display:inline-block;background:var(--ember);color:var(--white);font-family:var(--font-mono);font-size:9pt;font-weight:600;letter-spacing:.1em;padding:6px 16px;margin-bottom:22px;}
+.cover-divider{width:60px;height:2px;background:var(--rust);margin-bottom:22px;}
+.cover-table{width:100%;border-collapse:collapse;font-size:8.5pt;margin-bottom:22px;}
+.cover-table thead th{background:rgba(255,255,255,.08);color:var(--sand-dark);font-family:var(--font-mono);font-size:7pt;letter-spacing:.15em;text-transform:uppercase;padding:8px 12px;text-align:left;border-bottom:1px solid rgba(255,255,255,.1);}
+.cover-table tbody tr:nth-child(odd) td{background:rgba(255,255,255,.03);}
+.cover-table tbody tr:hover td{background:rgba(230,126,34,.12);}
+.cover-table td{padding:7px 12px;color:var(--sand);border-bottom:1px solid rgba(255,255,255,.06);vertical-align:middle;}
+.cover-table td:first-child{font-family:var(--font-mono);font-size:8pt;color:var(--ember);white-space:nowrap;font-weight:600;}
+.cover-table td:nth-child(2){color:var(--white);font-weight:600;}
+.cover-table td:last-child{color:var(--sage);font-style:italic;}
+.cover-note{font-size:8pt;color:rgba(232,213,183,.6);font-style:italic;text-align:center;padding-top:8px;border-top:1px solid rgba(255,255,255,.08);}
+.cover-note strong{color:var(--gold);}
+
+/* DAY PAGE */
+.day-page{max-width:100%;overflow-x:hidden;}
+.page-header-bar{background:var(--night);padding:6px var(--margin);display:flex;justify-content:space-between;align-items:center;max-width:100%;overflow:hidden;}
+.page-header-bar span{font-family:var(--font-mono);font-size:7pt;color:var(--sand-dark);letter-spacing:.08em;}
+.page-header-bar strong{color:var(--ember);}
+.day-banner{position:relative;overflow:hidden;max-width:100%;height:210px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(135deg,#27496d,#142850);}
+.day-banner img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;}
+.day-banner-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 20%,rgba(26,26,46,.92) 100%);}
+.day-banner-content{position:relative;z-index:2;padding:16px 24px;display:flex;align-items:flex-end;gap:20px;}
+.day-number{font-family:var(--font-mono);font-size:7pt;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ember);background:rgba(230,126,34,.15);border:1px solid var(--ember);padding:4px 10px;white-space:nowrap;align-self:flex-start;margin-top:auto;}
+.day-title-block{flex:1;}
+.day-date{font-family:var(--font-mono);font-size:8pt;color:var(--sand-dark);letter-spacing:.1em;margin-bottom:2px;}
+.day-title{font-family:var(--font-display);font-size:22pt;font-weight:700;color:var(--white);line-height:1.1;margin-bottom:4px;}
+.day-subtitle{font-size:9pt;color:var(--sand);font-style:italic;font-weight:300;line-height:1.4;max-width:600px;}
+.day-body{padding:20px var(--margin) 28px;max-width:100%;overflow-x:hidden;}
+
+/* MAP IMG */
+.map-img{margin:6px 0 4px;position:relative;border:1px solid #D4D0C8;max-width:100%;overflow:hidden;}
+.map-img img{width:100%;display:block;}
+.map-img a.map-open{position:absolute;bottom:8px;right:8px;background:rgba(26,26,46,.9);color:var(--ember);font-family:var(--font-mono);font-size:7.5pt;font-weight:bold;letter-spacing:.08em;text-decoration:none;padding:5px 11px;border:1px solid var(--ember);}
+
+/* SECTION HEADER */
+.section-header{display:flex;align-items:center;gap:10px;margin:20px 0 10px;}
+.section-header h3{font-family:var(--font-display);font-size:13pt;font-weight:700;color:var(--rust);}
+.section-rule{flex:1;height:1px;background:var(--sand);}
+
+/* FEEL */
+.feel-box{background:var(--stone-pale);border-left:3px solid var(--rust);padding:12px 16px;font-size:9.5pt;line-height:1.7;margin-bottom:4px;}
+.feel-box .energy-badge{display:inline-block;font-family:var(--font-mono);font-size:7pt;letter-spacing:.1em;text-transform:uppercase;background:var(--rust);color:#fff;padding:2px 8px;margin-bottom:6px;}
+
+/* WEATHER (live) */
+.weather-box{background:linear-gradient(135deg,#1A2744 0%,#0D1B2A 100%);border:1px solid #2A4070;border-radius:5px;padding:8px 11px;margin:8px 0;}
+.weather-header{font-family:Georgia,serif;font-size:10px;color:#E8D5B7;font-weight:bold;letter-spacing:.4px;margin-bottom:2px;text-transform:uppercase;}
+.weather-status{font-family:var(--font-mono);font-size:7.5px;color:#6FCF97;margin-bottom:6px;letter-spacing:.3px;}
+.weather-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-bottom:6px;}
+.weather-cell{background:rgba(255,255,255,.06);border-radius:3px;padding:4px 6px;display:flex;flex-direction:column;gap:1px;}
+.w-icon{font-size:11px;line-height:1;}
+.w-label{font-size:8px;color:#8BA0C0;text-transform:uppercase;letter-spacing:.3px;}
+.w-val{font-size:10px;color:#E8D5B7;font-weight:bold;line-height:1.2;}
+.weather-note{font-size:10px;color:#A0B8D8;line-height:1.45;border-top:1px solid rgba(255,255,255,.1);padding-top:5px;margin-top:3px;}
+.weather-note em{color:#F0C060;font-style:normal;font-weight:bold;}
+.weather-note strong{color:#FF8C60;}
+
+/* GPX */
+.gpx-box{background:var(--night);padding:10px 14px;margin:8px 0;display:flex;align-items:center;gap:12px;}
+.gpx-icon{font-size:18pt;flex-shrink:0;}
+.gpx-label{font-family:var(--font-mono);font-size:7pt;text-transform:uppercase;letter-spacing:.15em;color:var(--sand-dark);display:block;margin-bottom:2px;}
+.gpx-name{font-family:var(--font-mono);font-size:9pt;color:var(--ember);font-weight:600;}
+.gpx-name a{color:var(--ember);text-decoration:none;}
+.gpx-note{font-size:8pt;color:rgba(232,213,183,.6);font-style:italic;margin-top:2px;}
+
+/* ROUTE STRIP */
+.route-strip{background:var(--night);padding:10px 16px;display:flex;align-items:center;overflow-x:auto;margin:0 0 4px;}
+.route-stop{display:flex;align-items:center;}
+.stop-dot{width:10px;height:10px;border-radius:50%;background:var(--ember);border:2px solid var(--white);flex-shrink:0;}
+.stop-dot.start,.stop-dot.end{background:var(--rust);width:12px;height:12px;}
+.stop-label{font-family:var(--font-mono);font-size:7pt;color:var(--sand);white-space:nowrap;padding:0 8px;}
+.stop-label.start,.stop-label.end{color:var(--white);font-weight:600;}
+.route-line{flex:1;min-width:18px;height:2px;background:linear-gradient(to right,var(--ember),var(--rust));}
+
+/* OPTIONS */
+.options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:8px 0;}
+.option-card{border:1px solid var(--sand);border-top:3px solid var(--rust);padding:12px 14px;background:var(--white);}
+.option-card.recommended{border-top-color:var(--ember);background:var(--ember-pale);}
+.option-label{font-family:var(--font-mono);font-size:6.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--rust);margin-bottom:4px;}
+.option-card.recommended .option-label{color:var(--ember);}
+.option-card h4{font-family:var(--font-display);font-size:11pt;font-weight:700;color:var(--ink);margin-bottom:6px;line-height:1.3;}
+.option-card p{font-size:8.5pt;line-height:1.55;color:var(--stone);margin-bottom:6px;}
+.option-stops{font-size:8pt;color:var(--ink);margin-bottom:5px;}
+.option-stops strong{color:var(--rust);}
+.option-why{font-size:7.5pt;font-style:italic;color:var(--stone);padding:5px 8px;background:rgba(0,0,0,.04);border-radius:2px;margin-bottom:8px;line-height:1.5;}
+.option-links{display:flex;flex-wrap:wrap;gap:4px;}
+.map-link{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:7pt;color:var(--sky);text-decoration:none;background:var(--sky-pale);border:1px solid var(--sky);padding:3px 8px;}
+.map-link:hover{background:var(--sky);color:#fff;}
+.map-link::before{content:'📍';font-size:7pt;}
+
+/* HIKES */
+.hikes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:8px 0;}
+.hike-card{border:1px solid #D8E8D5;background:var(--sage-pale);padding:10px 12px;}
+.hike-card h4{font-family:var(--font-display);font-size:10.5pt;font-weight:700;color:var(--pine);margin-bottom:2px;display:flex;align-items:center;gap:5px;}
+.hike-meta{font-family:var(--font-mono);font-size:7.5pt;color:var(--stone);margin-bottom:7px;letter-spacing:.04em;}
+.hike-stats{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:6px;}
+.stat-cell{font-size:7.5pt;line-height:1.4;}
+.stat-label{font-family:var(--font-mono);font-size:6.5pt;text-transform:uppercase;letter-spacing:.1em;color:var(--sage);display:block;margin-bottom:1px;}
+.stat-value{color:var(--ink);}
+.stars{color:var(--gold);font-size:8pt;letter-spacing:-1px;}
+
+/* CAMP GRID */
+.camp-grid{display:grid;grid-template-columns:1fr 1fr 1fr;border:1px solid var(--sand-dark);margin:8px 0;}
+.camp-grid>div{border-right:1px solid var(--sand);}
+.camp-grid>div:last-child{border-right:none;}
+.camp-cell-header{font-family:var(--font-mono);font-size:7pt;text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:0;padding:6px 12px;display:block;}
+.camp-cell-header.view{background:var(--rust);color:#fff;}
+.camp-cell-header.wind{background:var(--stone);color:#fff;}
+.camp-cell-header.backup{background:var(--sage);color:#fff;}
+.camp-cell{padding:10px 12px;font-size:8pt;line-height:1.55;background:var(--stone-pale);}
+.camp-cell strong{display:block;color:var(--ink);font-size:8.5pt;margin-bottom:2px;}
+.camp-cell .coords{font-family:var(--font-mono);font-size:7pt;color:var(--sky);display:block;margin:2px 0;}
+.camp-cell .coords a{color:var(--sky);}
+.camp-cell .price{display:inline-block;background:var(--gold-pale);color:var(--stone);font-family:var(--font-mono);font-size:7pt;padding:1px 6px;margin-top:3px;}
+
+/* GOLDEN HOUR */
+.golden-hour{background:linear-gradient(135deg,var(--gold-pale),#FFF8E8);border:1px solid var(--gold);border-left:4px solid var(--gold);padding:12px 16px;margin:10px 0;}
+.golden-hour-header{font-family:var(--font-mono);font-size:7.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:6px;}
+.golden-hour dl{display:grid;grid-template-columns:120px 1fr;gap:3px 12px;font-size:8.5pt;}
+.golden-hour dt{font-weight:600;color:var(--stone);font-family:var(--font-mono);font-size:8pt;align-self:start;}
+.golden-hour dd{color:var(--ink);line-height:1.5;}
+
+/* QUICK DECISIONS */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0;}
+.quick-decisions{background:var(--rust-pale);border:1px solid #E8B4B0;border-left:4px solid var(--rust);padding:10px 14px;margin:10px 0;}
+.quick-decisions-header{font-family:var(--font-mono);font-size:7.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--rust-dark);font-weight:600;margin-bottom:6px;}
+.decision-row{display:flex;align-items:baseline;gap:8px;padding:3px 0;font-size:8.5pt;border-bottom:1px solid rgba(192,57,43,.1);line-height:1.4;}
+.decision-row:last-child{border-bottom:none;}
+.decision-icon{flex-shrink:0;}
+.decision-trigger{font-weight:700;color:var(--rust-dark);white-space:nowrap;flex-shrink:0;}
+.decision-arrow{color:var(--stone);flex-shrink:0;}
+.decision-action{color:var(--ink);}
+
+/* FUEL + LC */
+.fuel-box{background:var(--ember-pale);border:1px solid #F0C080;border-left:4px solid var(--ember);padding:10px 14px;margin:10px 0;}
+.fuel-header{font-family:var(--font-mono);font-size:7.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--ember);font-weight:600;margin-bottom:5px;}
+.fuel-box ul{list-style:none;}
+.fuel-box li{font-size:8.5pt;padding:2px 0 2px 16px;position:relative;line-height:1.5;color:var(--ink);}
+.fuel-box li::before{content:'⛽';position:absolute;left:0;font-size:8pt;}
+.lc-box{background:var(--sage-pale);border:1px solid var(--sage);border-left:4px solid var(--pine);padding:10px 14px;margin:10px 0;}
+.lc-header{font-family:var(--font-mono);font-size:7.5pt;letter-spacing:.15em;text-transform:uppercase;color:var(--pine);font-weight:600;margin-bottom:5px;}
+.lc-box .lc-go,.lc-box .lc-avoid{font-size:8.5pt;line-height:1.55;padding:3px 0;}
+.lc-go strong{color:var(--pine);}
+.lc-avoid strong{color:var(--rust);}
+
+/* HOTEL / TABLES / WARNING / PHOTO */
+.hotel-table{width:100%;border-collapse:collapse;font-size:8.5pt;margin:8px 0;}
+.hotel-table thead th{background:var(--sky);color:#fff;font-family:var(--font-mono);font-size:7.5pt;letter-spacing:.08em;padding:7px 10px;text-align:left;}
+.hotel-table td{padding:7px 10px;border-bottom:1px solid #D6EAF8;vertical-align:top;line-height:1.5;}
+.hotel-table tbody tr:nth-child(even) td{background:var(--sky-pale);}
+.hotel-table td:first-child{font-weight:600;color:var(--ink);}
+.warning{background:#FEF3CD;border:1px solid #F6C23E;border-left:4px solid #D4A017;padding:8px 12px;font-size:8.5pt;line-height:1.5;margin:6px 0;color:#5D4E37;}
+.warning strong{color:#9B6800;}
+.photo-strip{display:grid;gap:6px;margin:10px 0;}
+.photo-strip.two{grid-template-columns:1fr 1fr;}
+.photo-strip.three{grid-template-columns:1fr 1fr 1fr;}
+.photo-item{position:relative;overflow:hidden;}
+.photo-item img{width:100%;height:150px;object-fit:cover;display:block;}
+.photo-caption{font-family:var(--font-mono);font-size:6.5pt;color:var(--stone);padding:4px 6px;background:var(--stone-pale);line-height:1.3;letter-spacing:.04em;}
+
+/* IMG PLACEHOLDER (until Brad drops photos in /images) */
+.img-ph{width:100%;height:100%;min-height:140px;display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--font-mono);font-size:8pt;color:#9FB3C8;background:repeating-linear-gradient(135deg,#1d2b44,#1d2b44 12px,#22324f 12px,#22324f 24px);padding:10px;line-height:1.4;}
+
+/* REFERENCE PAGE */
+.ref-page{padding:var(--margin);}
+.ref-page h2{font-family:var(--font-display);font-size:24pt;color:var(--rust);margin-bottom:6px;}
+.ref-section h3{font-family:var(--font-display);font-size:12pt;color:var(--rust);border-bottom:1px solid var(--sand);padding-bottom:4px;margin:16px 0 8px;}
+.gpx-table,.poi-table{width:100%;border-collapse:collapse;font-size:8.5pt;margin:8px 0;}
+.gpx-table th,.poi-table th{background:var(--pine);color:#fff;font-family:var(--font-mono);font-size:7.5pt;padding:6px 10px;text-align:left;}
+.gpx-table td,.poi-table td{padding:6px 10px;border-bottom:1px solid var(--sand);vertical-align:top;line-height:1.5;}
+.gpx-table tr:nth-child(even) td,.poi-table tr:nth-child(even) td{background:var(--sage-pale);}
+.poi-table td:first-child{font-family:var(--font-mono);font-size:8pt;color:var(--pine);white-space:nowrap;}
+.lc-notes{list-style:none;}
+.lc-notes li{font-size:8.5pt;padding:4px 0 4px 20px;position:relative;border-bottom:1px dotted var(--sand);line-height:1.5;}
+.lc-notes li::before{content:'🔧';position:absolute;left:0;font-size:8pt;}
+
+@media (max-width:480px){
+  .weather-grid{grid-template-columns:repeat(2,1fr)!important;}
+  .camp-grid{grid-template-columns:1fr!important;}
+  .two-col{grid-template-columns:1fr!important;}
+  .cover-title{font-size:38pt;}
+}
+</style>
+</head>
+<body>
+<div class="book">
+
+<!-- ════════ COVER ════════ -->
+<div class="cover">
+  <img class="cover-hero" src="images/00.jpg" alt="San Juan Mountains, Colorado">
+  <div class="cover-gradient"></div>
+  <div class="cover-content">
+    <div class="cover-eyebrow">🏔 Two Adventurers · One Land Cruiser · 9 Days</div>
+    <div class="cover-title">Overlanding<br><span>Colorado</span></div>
+    <div class="cover-sub">Denver → Great Sand Dunes → Conejos high country → Durango → Alpine Loop → Ouray → Rimrocker → Moab → SLC</div>
+    <div class="cover-dates">JUNE 21 – 29, 2026 &nbsp;·&nbsp; ~900 MILES · 4 PASSES OVER 11,000 FT</div>
+    <div class="cover-divider"></div>
+    <table class="cover-table">
+      <thead><tr><th>Date</th><th>Where</th><th>Drive</th><th>Sleep</th></tr></thead>
+      <tbody>
+        <tr><td>Jun 21</td><td><a href="#day-1" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,213,183,.4);">Denver → Medano Pass Rd</a></td><td>~4 hrs +4WD</td><td>Medano Pass Primitive Rd (dispersed)</td></tr>
+        <tr><td>Jun 22</td><td><a href="#day-2" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,213,183,.4);">Sand Dunes → Conejos → Park Creek Rd</a></td><td>~5 hrs +trail</td><td>Platoro / Stunner dispersed</td></tr>
+        <tr><td>Jun 23</td><td><a href="#day-3" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,213,183,.4);">Park Creek Rd → Durango</a></td><td>~3.5 hrs</td><td>Hampton Inn, Durango</td></tr>
+        <tr><td>Jun 24</td><td><a href="#day-4" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,213,183,.4);">Million Dollar Hwy → Alpine Loop</a></td><td>~3 hrs +trail</td><td>Alpine Loop dispersed</td></tr>
+        <tr><td>Jun 25</td><td><a href="#day-5" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,213,183,.4);">Alpine Loop · Handies / American Basin</a></td><td>trail day</td><td>Alpine Loop dispersed</td></tr>
+        <tr><td>Jun 26</td><td><a href="#day-6" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,213,183,.4);">Finish loop → Ouray</a></td><td>~2 hrs</td><td>Quality Inn, Ouray</td></tr>
+        <tr><td>Jun 27</td><td><a href="#day-7" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,213,183,.4);">Ouray → Montrose → Rimrocker</a></td><td>~4 hrs +trail</td><td>Rimrocker dispersed (Paradox)</td></tr>
+        <tr><td>Jun 28</td><td><a href="#day-8" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,213,183,.4);">Finish Rimrocker → Moab rim</a></td><td>trail day</td><td>Canyonlands Overlook / Arch</td></tr>
+        <tr><td>Jun 29</td><td><a href="#day-9" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,213,183,.4);">Moab → Salt Lake City</a></td><td>~3.5 hrs</td><td>Home 🏁</td></tr>
+      </tbody>
+    </table>
+    <div class="cover-note">
+      Each evening section gives you <strong>3 curated day options</strong>, hike details, decision-ready camp alternatives, golden-hour picks, and quick-decision pivots for wind &amp; weather.
+      <br>GPX files for OnX Offroad, Gaia GPS &amp; Google Maps live in the <strong>/gpx files</strong> folder · Live weather loads at the top of every day.
+    </div>
+  </div>
+</div>
+<!-- ════════ DAY 1 ════════ -->
+<div class="day-page" id="day-1">
+  <div class="page-header-bar"><span>🏔 Colorado Overland · Jun 21–29</span><span><strong>DAY 1</strong> · Medano Pass, Great Sand Dunes</span></div>
+  <div class="day-banner">
+    <img src="images/01.jpg" alt="Great Sand Dunes beneath the Sangre de Cristo range">
+    <div class="day-banner-overlay"></div>
+    <div class="day-banner-content">
+      <div class="day-number">Day 1 of 9</div>
+      <div class="day-title-block">
+        <div class="day-date">June 21 · Denver → Medano Pass Primitive Rd · ~4 hrs + 4WD</div>
+        <div class="day-title">Into the Sand &amp; Sangres</div>
+        <div class="day-subtitle">Leave the city behind, cross La Veta Pass into the San Luis Valley, then air down and crawl up a sandy 4WD road to camp where the dunes meet the mountains.</div>
+      </div>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="map-img">
+      <img src="images/day1-map.png" alt="Day 1 route — Denver to Medano Pass Primitive Road">
+      <a class="map-open" href="https://www.google.com/maps/dir/Denver,+CO/Walsenburg,+CO/Great+Sand+Dunes+National+Park+Visitor+Center/37.82401,-105.45907" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
+    </div>
+    <div class="route-strip">
+      <div class="route-stop"><span class="stop-dot start"></span><span class="stop-label start">Denver</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Walsenburg</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">La Veta Pass</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Dunes Entrance</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏕 Medano Pass Rd</span></div>
+    </div>
+
+    <div class="section-header"><h3>🌄 What Tonight Feels Like</h3><div class="section-rule"></div></div>
+    <div class="feel-box">
+      <span class="energy-badge">⚡ Travel + Light 4WD</span>
+      A get-there day with a payoff. Four hours of pavement unwind into the wide San Luis Valley, then the pavement ends. You air down, drop into low range, and ford a string of shallow creek crossings as the Medano Pass Primitive Road climbs into ponderosa and aspen with North America's tallest dunes glowing behind you. <strong>Why it's special:</strong> almost nobody who visits the dunes earns this campsite — it takes the truck you brought. First night, stars to the horizon, dunes at the doorstep.
+    </div>
+
+    <div class="weather-box" data-lat="37.824" data-lon="-105.459" data-date="2026-06-21">
+      <div class="weather-header">🌡️ Weather — Jun 21 · Medano Pass Rd (~9,000 ft)</div>
+      <div class="weather-status" data-w="status">Loading… live forecast</div>
+      <div class="weather-grid">
+        <div class="weather-cell"><span class="w-icon">☀️</span><span class="w-label">High</span><span class="w-val" data-w="high" data-fallback="74°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌙</span><span class="w-label">Low</span><span class="w-val" data-w="low" data-fallback="42°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">💨</span><span class="w-label">Wind</span><span class="w-val" data-w="wind" data-fallback="10–15 mph">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌧️</span><span class="w-label">Rain chance</span><span class="w-val" data-w="precip" data-fallback="~30%">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon" data-w="condicon">🌤️</span><span class="w-label">Conditions</span><span class="w-val" data-w="cond" data-fallback="PM t-storms">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🏜️</span><span class="w-label">Sand surface</span><span class="w-val">Can hit 120°F midday</span></div>
+        <div class="weather-cell"><span class="w-icon">🌅</span><span class="w-label">Sunrise · Sunset</span><span class="w-val" data-w="sun" data-fallback="5:36 AM · 8:31 PM">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌬️</span><span class="w-label">Evening wind</span><span class="w-val">Funnels down-valley</span></div>
+      </div>
+      <div class="weather-note">⚠️ Afternoon <strong>thunderstorms</strong> build fast over the Sangres in late June — be off exposed ridges by 1 PM. Creek crossings on Medano Pass Rd run <em>highest in late June</em> from snowmelt (usually still passable for a Land Cruiser; scout if it looks deep). Evening winds funnel down the valley — see camp notes for the sheltered picks.</div>
+    </div>
+
+    <div class="gpx-box"><span class="gpx-icon">🗺️</span><div>
+      <span class="gpx-label">GPX Track</span>
+      <span class="gpx-name"><a href="https://www.google.com/maps/dir/Great+Sand+Dunes+National+Park+Visitor+Center/37.82401,-105.45907" target="_blank">01_Medano_Pass_Road.gpx → Open route in Maps</a></span>
+      <div class="gpx-note">Load into OnX Offroad / Gaia before you lose signal. Waypoints: airdown pullout, creek crossings, numbered sites, Medano Pass.</div>
+    </div></div>
+
+    <div class="section-header"><h3>🎯 Choose Your Afternoon (arrive ~2–3 PM)</h3><div class="section-rule"></div></div>
+    <div class="options-grid">
+      <div class="option-card recommended">
+        <div class="option-label">★ Recommended</div>
+        <h4>Air Down &amp; Drive to a High Site</h4>
+        <p>Stop at the VC for the road report, air down at the trailhead, and crawl up to one of the upper numbered sites near the aspen. Set camp early, then walk the dunes at golden hour.</p>
+        <div class="option-stops"><strong>Stops:</strong> Visitor Center → Point of No Return (airdown) → numbered site</div>
+        <div class="option-stops"><strong>Walk:</strong> First dune ridge from camp (~1–2 mi, your pace)</div>
+        <div class="option-why">Best payoff for least stress — claim a site, settle in, save the big dune hike for tomorrow's cool morning.</div>
+        <div class="option-links">
+          <a class="map-link" href="https://maps.google.com/?q=37.7339,-105.5117" target="_blank">Visitor Center</a>
+          <a class="map-link" href="https://maps.google.com/?q=37.82401,-105.45907" target="_blank">Camp pin</a>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option B — Quick Leg-Stretch</div>
+        <h4>Zapata Falls on the Way In</h4>
+        <p>A 0.9-mi rocky scramble to a waterfall hidden in a slot — you wade the creek to see it. Cools you off after the drive and the trailhead has the best valley-wide dune view.</p>
+        <div class="option-stops"><strong>Hike:</strong> Zapata Falls (0.9 mi RT)</div>
+        <div class="option-why">Perfect if you arrive with daylight to spare. Water shoes help. Rough 3.6-mi gravel access road — easy for your rig.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=37.6233,-105.5503" target="_blank">Zapata Falls TH</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option C — Late / Tired Arrival</div>
+        <h4>Lower Site + Sunset on the Dunes</h4>
+        <p>If you're rolling in late, grab the first open lower site (less wind, faster to reach), then drive back down to the main dunes lot for sunset color on the sand.</p>
+        <div class="option-stops"><strong>Walk:</strong> Dunes from the day-use lot (as far as you like)</div>
+        <div class="option-why">No pressure to push the full road in fading light. The first creek crossings are the easy ones.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=37.7456,-105.5197" target="_blank">Main Dunes Lot</a></div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🥾 Short Hikes</h3><div class="section-rule"></div></div>
+    <div class="hikes-grid">
+      <div class="hike-card"><h4>💧 Zapata Falls</h4>
+        <div class="hike-meta">0.9 mi RT · ~30–45 min · 150 ft gain</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">A 25-ft waterfall hidden inside a rock slot — you wade upstream to reach it</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Busy midday; quiet early eve. Best dune panorama in the valley from the lot</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Ice can linger in the crevice into early summer — footing is slick</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★★☆</span> Big payoff, tiny effort</span></div>
+        </div>
+      </div>
+      <div class="hike-card"><h4>🏜️ First Dune Ridge</h4>
+        <div class="hike-meta">~1.5 mi RT · 45–60 min · soft sand</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">Ease into the dunes without committing to High Dune — sweeping ridge views</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Thin out fast past the first ridge; evening is glorious and cool</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Cross Medano Creek (snowmelt) barefoot on the way out in June</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★★☆</span> Sand doubles the effort — go at golden hour</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🏕️ Camp Tonight — Medano Pass Primitive Rd</h3><div class="section-rule"></div></div>
+    <div class="warning">🔢 <strong>21 numbered, first-come sites only</strong> (free, no reservations) starting 5.2 mi up the road. All fill on summer weekends — Jun 21 is a <strong>Sunday</strong>, so weekenders are leaving; arrive by mid-afternoon to claim one. 4WD + high clearance + low tire pressure required (deep sand & ~9 creek crossings).</div>
+    <div class="camp-grid">
+      <div><span class="camp-cell-header view">🌄 Best View</span><div class="camp-cell">
+        <strong>Upper sites (≈ #8–#15)</strong>
+        Higher up toward the pass — aspen pockets, openings framing the dunes and Sangres. Cooler, darker skies.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=37.82401,-105.45907" target="_blank">37.82401, -105.45907</a></span>
+        <span class="price">Free · 4WD only · best after the crossings</span>
+      </div></div>
+      <div><span class="camp-cell-header wind">🛡️ Wind / Storm-Protected</span><div class="camp-cell">
+        <strong>Timbered lower sites (≈ #3–#7)</strong>
+        Tucked into ponderosa that block the down-valley evening wind and give overhead cover when afternoon storms roll the ridge.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=37.785,-105.490" target="_blank">~37.785, -105.490</a></span>
+        <span class="price">Free · easiest to reach · grab if windy</span>
+      </div></div>
+      <div><span class="camp-cell-header backup">🔄 Easy Backup</span><div class="camp-cell">
+        <strong>Piñon Flats Campground</strong>
+        Paved-access NPS campground at the dunes if all 21 sites are full or the creeks look too high. Book ahead on recreation.gov.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=37.7385,-105.5106" target="_blank">37.7385, -105.5106</a></span>
+        <span class="price">~$20/night · reservable · any vehicle</span>
+      </div></div>
+    </div>
+
+    <div class="golden-hour">
+      <div class="golden-hour-header">🌅 Golden Hour</div>
+      <dl>
+        <dt>Where</dt><dd>From camp, walk to the nearest open rise — or drop to the main dunes and climb the first ridge. The Sangres go alpenglow-pink while the sand turns amber.</dd>
+        <dt>Why It Matters</dt><dd>The dunes are backlit and shadow-carved in the last hour — the single most photogenic light of the day, and the crowds are gone.</dd>
+        <dt>Worth It?</dt><dd>Absolutely. Bring a layer; temps drop fast once the sun clears the ridge. <a href="https://maps.google.com/?q=37.7456,-105.5197" target="_blank">→ Dunes lot</a></dd>
+      </dl>
+    </div>
+
+    <div class="two-col">
+      <div class="quick-decisions">
+        <div class="quick-decisions-header">⚡ Quick Decisions</div>
+        <div class="decision-row"><span class="decision-icon">🌊</span><span class="decision-trigger">Creeks running high</span><span class="decision-arrow">→</span><span class="decision-action">Scout on foot first; if over the hubs, take a lower site below the crossing or fall back to Piñon Flats</span></div>
+        <div class="decision-row"><span class="decision-icon">💨</span><span class="decision-trigger">Windy evening</span><span class="decision-arrow">→</span><span class="decision-action">Pick a timbered lower site (#3–#7), not an exposed upper opening</span></div>
+        <div class="decision-row"><span class="decision-icon">⛈️</span><span class="decision-trigger">Storm building</span><span class="decision-arrow">→</span><span class="decision-action">Off the dunes &amp; ridges by 1 PM — lightning danger on open sand</span></div>
+        <div class="decision-row"><span class="decision-icon">🔢</span><span class="decision-trigger">All 21 sites full</span><span class="decision-arrow">→</span><span class="decision-action">Piñon Flats CG (reservable) or San Luis SP / Alamosa for the night</span></div>
+      </div>
+      <div class="fuel-box">
+        <div class="fuel-header">⛽ Fuel Strategy</div>
+        <ul>
+          <li>Top off in <strong>Walsenburg</strong> (I-25) or <strong>Alamosa</strong> — last reliable gas before the valley empties out</li>
+          <li>No services past the dunes entrance — fill up full</li>
+          <li>Air-down to ~18–20 psi at the Point of No Return for the sand</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lc-box">
+      <div class="lc-header">🚙 Land Cruiser Advantage</div>
+      <div class="lc-go"><strong>Push deeper:</strong> The full Medano Pass Primitive Rd is exactly your rig's terrain — sand, creek fords, and a 10,000-ft pass. You can continue over to Hwy 69 if you ever want the long way out.</div>
+      <div class="lc-avoid"><strong>Avoid:</strong> Don't air down too far on a loaded truck, and don't stop in the deep sand — keep momentum. Stay on the road; off-road travel is prohibited in the Preserve.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ DAY 2 ════════ -->
+<div class="day-page" id="day-2">
+  <div class="page-header-bar"><span>🏔 Colorado Overland · Jun 21–29</span><span><strong>DAY 2</strong> · Dunes → Conejos → Park Creek Rd</span></div>
+  <div class="day-banner">
+    <img src="images/02.jpg" alt="Conejos River high country near Platoro">
+    <div class="day-banner-overlay"></div>
+    <div class="day-banner-content">
+      <div class="day-number">Day 2 of 9</div>
+      <div class="day-title-block">
+        <div class="day-date">June 22 · Great Sand Dunes → Horca → FSR 250 → Park Creek Rd · ~5 hrs + trail</div>
+        <div class="day-title">Sand to Spruce</div>
+        <div class="day-subtitle">Play on the dunes in the cool morning, then trade desert for the Conejos high country — up FSR 250 past Platoro and over Stunner Pass onto the meadows of Park Creek Road.</div>
+      </div>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="map-img">
+      <img src="images/day2-map.png" alt="Day 2 route — Great Sand Dunes to Park Creek Road via the Conejos">
+      <a class="map-open" href="https://www.google.com/maps/dir/Great+Sand+Dunes+National+Park+Visitor+Center/Alamosa,+CO/Antonito,+CO/37.13094,-106.34928/Platoro,+CO/Stunner+Campground,+CO" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
+    </div>
+    <div class="route-strip">
+      <div class="route-stop"><span class="stop-dot start"></span><span class="stop-label start">Dunes</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Alamosa</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Antonito</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Horca / FSR 250</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Platoro</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏕 Stunner / Park Creek</span></div>
+    </div>
+
+    <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
+    <div class="feel-box">
+      <span class="energy-badge">⚡ Big Day — Play + Drive + Trail</span>
+      Two completely different worlds in one day. Morning: barefoot on the dunes with snowmelt running through Medano Creek. Afternoon: a long, beautiful grind up the Conejos River on FSR 250 — Alamosa Canyon, Platoro's tiny cabins, then over Stunner Pass onto Park Creek Road, all spruce, meadow, and tumbling water at 10,000+ ft. <strong>Reality check:</strong> it's ~2.5 hrs of pavement to Horca, then slow dirt — keep the dune session to the cool early hours so you reach camp with daylight.
+    </div>
+
+    <div class="weather-box" data-lat="37.36" data-lon="-106.54" data-date="2026-06-22">
+      <div class="weather-header">🌡️ Weather — Jun 22 · Platoro / Stunner (~10,000 ft)</div>
+      <div class="weather-status" data-w="status">Loading… live forecast</div>
+      <div class="weather-grid">
+        <div class="weather-cell"><span class="w-icon">☀️</span><span class="w-label">High</span><span class="w-val" data-w="high" data-fallback="64°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌙</span><span class="w-label">Low</span><span class="w-val" data-w="low" data-fallback="34°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">💨</span><span class="w-label">Wind</span><span class="w-val" data-w="wind" data-fallback="8–14 mph">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌧️</span><span class="w-label">Rain chance</span><span class="w-val" data-w="precip" data-fallback="~40%">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon" data-w="condicon">🌤️</span><span class="w-label">Conditions</span><span class="w-val" data-w="cond" data-fallback="PM t-storms">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">❄️</span><span class="w-label">Night</span><span class="w-val">Can dip near freezing</span></div>
+        <div class="weather-cell"><span class="w-icon">🌅</span><span class="w-label">Sunrise · Sunset</span><span class="w-val" data-w="sun" data-fallback="5:46 AM · 8:36 PM">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🛣️</span><span class="w-label">Dirt roads</span><span class="w-val">Greasy when wet</span></div>
+      </div>
+      <div class="weather-note">⚠️ You're sleeping at <strong>~10,000 ft</strong> — pack a real sleeping bag; nights can flirt with freezing even in late June. Afternoon <em>thunderstorms</em> are near-daily over the Conejos high country; the dirt of FSR 250/380 gets slick when wet. Aim to be set up before the typical 2–4 PM cells.</div>
+    </div>
+
+    <div class="gpx-box"><span class="gpx-icon">🗺️</span><div>
+      <span class="gpx-label">GPX Track</span>
+      <span class="gpx-name"><a href="https://www.trailsoffroad.com/US/colorado/trails/8613-park-creek-road" target="_blank">02_Conejos_ParkCreek.gpx → Trail page (TrailsOffroad #8613)</a></span>
+      <div class="gpx-note">FSR 250 up the Conejos + Park Creek Rd (FSR 380) over Stunner Pass. Load to OnX/Gaia — no cell signal past Antonito.</div>
+    </div></div>
+
+    <div class="section-header"><h3>🎯 Choose Your Morning at the Dunes</h3><div class="section-rule"></div></div>
+    <div class="options-grid">
+      <div class="option-card recommended">
+        <div class="option-label">★ Recommended</div>
+        <h4>High Dune at Dawn, Roll by 10</h4>
+        <p>Hit the sand before it heats up — climb toward High Dune (turn back whenever you've had the view), splash Medano Creek, then break camp and point south. Beat the heat and the storms.</p>
+        <div class="option-stops"><strong>Hike:</strong> Toward High Dune (up to 2.5 mi RT — go as far as it's fun)</div>
+        <div class="option-why">Cool sand, soft light, and you're off the road's slow dirt with daylight to spare.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=37.7456,-105.5197" target="_blank">Dunes Lot</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option B — Easy &amp; Iconic</div>
+        <h4>Medano Creek Wade + Sandboard</h4>
+        <p>Skip the summit grind. Wade the snowmelt creek, sandboard the first ridge, and soak it in. Rent a board in town the day before if you want one.</p>
+        <div class="option-stops"><strong>Walk:</strong> Creek &amp; first ridge (~1 mi, casual)</div>
+        <div class="option-why">Most fun-per-effort, and gets you on the road earliest for the long drive.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=37.7456,-105.5197" target="_blank">Medano Creek</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option C — Add a Stop</div>
+        <h4>Antonito Detour: Cumbres &amp; Toltec</h4>
+        <p>Rolling through Antonito anyway — the historic Cumbres &amp; Toltec steam railroad depot is a fun 20-min stretch, and it's your last real town for supplies before the high country.</p>
+        <div class="option-stops"><strong>Stop:</strong> Depot photo + top off fuel/water/ice</div>
+        <div class="option-why">Practical resupply + a slice of narrow-gauge history on the way to the Conejos.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=37.0753,-106.0086" target="_blank">C&amp;TS Depot</a></div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🥾 Stretch-Your-Legs Stops on FSR 250</h3><div class="section-rule"></div></div>
+    <div class="hikes-grid">
+      <div class="hike-card"><h4>🐟 Conejos River / Spectacle Lake</h4>
+        <div class="hike-meta">0.5–2 mi · flat · riverside</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">Gold-medal trout water; easy riverside walks to break up the slow drive</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Light midweek; a few anglers at pullouts</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Alamosa Canyon walls funnel the river — great cast-and-stretch break</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★☆☆</span> Easy + scenic</span></div>
+        </div>
+      </div>
+      <div class="hike-card"><h4>🏞️ Platoro Reservoir Shore</h4>
+        <div class="hike-meta">1–2 mi · flat · alpine lake</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">Quiet high-alpine reservoir ringed by peaks — a calm stop before Stunner Pass</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Sleepy; Platoro is a near-ghost village of cabins</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Last spot for a hot meal — the Skyline Lodge cooks if open</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★☆☆</span> Mellow + remote</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🏕️ Camp Tonight — Park Creek Rd / Stunner Area</h3><div class="section-rule"></div></div>
+    <div class="warning">📍 <strong>"Mamouth" — quick confirm needed.</strong> I couldn't match a named feature called <em>Mamouth</em> on FSR 250 / Park Creek Rd near Platoro (the only "Mammoth" in CO is up near Rollinsville, a different area). The camp picks below are the proven dispersed options along your exact route — <strong>tell me the spot you meant and I'll pin it precisely.</strong></div>
+    <div class="camp-grid">
+      <div><span class="camp-cell-header view">🌄 Best View</span><div class="camp-cell">
+        <strong>Park Creek Rd meadows (FSR 380)</strong>
+        Dispersed pullouts in open meadows below tower rock faces once over Stunner Pass — wide-open peak views, room to spread out.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=37.45,-106.62" target="_blank">~37.45, -106.62 (scout along 380)</a></span>
+        <span class="price">Free · dispersed · 4WD · exposed to wind</span>
+      </div></div>
+      <div><span class="camp-cell-header wind">🛡️ Storm-Protected</span><div class="camp-cell">
+        <strong>Timbered dispersed near Stunner</strong>
+        Pull into spruce-sheltered sites off FSR 250 near Stunner — overhead cover for the near-daily afternoon storms; close to water.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=37.398,-106.585" target="_blank">~37.398, -106.585</a></span>
+        <span class="price">Free · dispersed · pack out everything</span>
+      </div></div>
+      <div><span class="camp-cell-header backup">🔄 Easy Backup</span><div class="camp-cell">
+        <strong>Stunner Campground (5 sites)</strong>
+        Small developed FS campground with a few sites + dispersed nearby. Mix Lake CG by Platoro is a fallback if storms shut you down.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=Stunner+Campground+Colorado" target="_blank">Stunner Campground</a></span>
+        <span class="price">Free/low fee · first-come</span>
+      </div></div>
+    </div>
+
+    <div class="golden-hour">
+      <div class="golden-hour-header">🌅 Golden Hour</div>
+      <dl>
+        <dt>Where</dt><dd>A Park Creek Rd meadow opening or the rocky tower faces above the road — whichever side of Stunner Pass you've stopped on.</dd>
+        <dt>Why It Matters</dt><dd>Late light rakes across the meadow grass and lights the cliff faces gold; the air goes still and cold and the creek is the only sound.</dd>
+        <dt>Worth It?</dt><dd>Yes — but watch the western sky. If a cell is still around, keep the camp tucked in timber instead.</dd>
+      </dl>
+    </div>
+
+    <div class="two-col">
+      <div class="quick-decisions">
+        <div class="quick-decisions-header">⚡ Quick Decisions</div>
+        <div class="decision-row"><span class="decision-icon">⛈️</span><span class="decision-trigger">Storm at Stunner Pass</span><span class="decision-arrow">→</span><span class="decision-action">Wait it out below treeline; the pass dirt gets slick — don't cross a high point in lightning</span></div>
+        <div class="decision-row"><span class="decision-icon">🕐</span><span class="decision-trigger">Behind schedule</span><span class="decision-arrow">→</span><span class="decision-action">Camp on the Conejos/Platoro side tonight, run the full Park Creek Rd fresh in the AM</span></div>
+        <div class="decision-row"><span class="decision-icon">🌡️</span><span class="decision-trigger">Cold front</span><span class="decision-arrow">→</span><span class="decision-action">Drop to a lower Conejos site — every 1,000 ft down is a few degrees warmer overnight</span></div>
+        <div class="decision-row"><span class="decision-icon">🪵</span><span class="decision-trigger">Fire ban?</span><span class="decision-arrow">→</span><span class="decision-action">Check Rio Grande NF / Conejos Peak RD order before lighting anything in June</span></div>
+      </div>
+      <div class="fuel-box">
+        <div class="fuel-header">⛽ Fuel Strategy</div>
+        <ul>
+          <li>Fill up in <strong>Alamosa</strong> (big stations) — and <strong>Antonito</strong> is your true last gas</li>
+          <li>Top off water &amp; ice in Antonito; nothing reliable past Horca</li>
+          <li>Platoro <em>may</em> sell limited fuel/food seasonally — don't count on it</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lc-box">
+      <div class="lc-header">🚙 Land Cruiser Advantage</div>
+      <div class="lc-go"><strong>Push deeper:</strong> Park Creek Rd (FSR 380) tops out near 11,631 ft with creek crossings and rocky sections — squarely your rig's wheelhouse. Side spurs off 250 reach alpine lakes if you want to explore.</div>
+      <div class="lc-avoid"><strong>Avoid:</strong> Crossing Stunner Pass or any high open stretch during an active storm — and steep clay grades when they're wet and greasy.</div>
+    </div>
+  </div>
+</div>
+<!-- ════════ DAY 3 ════════ -->
+<div class="day-page" id="day-3">
+  <div class="page-header-bar"><span>🏔 Colorado Overland · Jun 21–29</span><span><strong>DAY 3</strong> · Park Creek Rd → Durango</span></div>
+  <div class="day-banner">
+    <img src="images/03.jpg" alt="Wolf Creek Pass and the road to Durango">
+    <div class="day-banner-overlay"></div>
+    <div class="day-banner-content">
+      <div class="day-number">Day 3 of 9</div>
+      <div class="day-title-block">
+        <div class="day-date">June 23 · Finish Park Creek Rd → South Fork → Durango · ~3.5 hrs</div>
+        <div class="day-title">Shower &amp; Resupply Day</div>
+        <div class="day-subtitle">Drop off the mountain, cross Wolf Creek Pass, soak the trail dust off, and roll into Durango for a real bed, laundry, and a brewery dinner before the San Juans.</div>
+      </div>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="map-img">
+      <img src="images/day3-map.png" alt="Day 3 route — Park Creek Road to Durango via Wolf Creek Pass">
+      <a class="map-open" href="https://www.google.com/maps/dir/Stunner+Campground,+CO/South+Fork,+CO/Wolf+Creek+Pass/Pagosa+Springs,+CO/Hampton+Inn+Durango,+3777+Main+Ave,+Durango,+CO" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
+    </div>
+    <div class="route-strip">
+      <div class="route-stop"><span class="stop-dot start"></span><span class="stop-label start">Park Creek Rd</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">South Fork</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Wolf Creek Pass</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Pagosa Springs</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏨 Durango</span></div>
+    </div>
+
+    <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
+    <div class="feel-box">
+      <span class="energy-badge">🛁 Easy + Recharge</span>
+      A gentle reset between two big chapters. Finish the Park Creek meadows in the cool morning, drop into South Fork, then climb US-160 over Wolf Creek Pass — the Continental Divide and one of Colorado's prettiest paved passes. Pagosa Springs has the hot springs if you want to soak two nights of camp out of your shoulders. Durango by afternoon: charge everything, restock the cooler, and sleep indoors. <strong>Why it matters:</strong> tomorrow you start the Million Dollar Highway and the Alpine Loop — arrive rested.
+    </div>
+
+    <div class="weather-box" data-lat="37.275" data-lon="-107.880" data-date="2026-06-23">
+      <div class="weather-header">🌡️ Weather — Jun 23 · Durango (~6,500 ft)</div>
+      <div class="weather-status" data-w="status">Loading… live forecast</div>
+      <div class="weather-grid">
+        <div class="weather-cell"><span class="w-icon">☀️</span><span class="w-label">High</span><span class="w-val" data-w="high" data-fallback="84°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌙</span><span class="w-label">Low</span><span class="w-val" data-w="low" data-fallback="50°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">💨</span><span class="w-label">Wind</span><span class="w-val" data-w="wind" data-fallback="6–12 mph">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌧️</span><span class="w-label">Rain chance</span><span class="w-val" data-w="precip" data-fallback="~30%">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon" data-w="condicon">🌤️</span><span class="w-label">Conditions</span><span class="w-val" data-w="cond" data-fallback="PM storms">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🏔️</span><span class="w-label">Wolf Creek Pass</span><span class="w-val">Cooler, possible PM cells</span></div>
+        <div class="weather-cell"><span class="w-icon">🌅</span><span class="w-label">Sunrise · Sunset</span><span class="w-val" data-w="sun" data-fallback="5:54 AM · 8:36 PM">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🍺</span><span class="w-label">Town eve</span><span class="w-val">Warm &amp; pleasant</span></div>
+      </div>
+      <div class="weather-note">Warm valley day — Durango sits low and hot compared to your campsites. Expect a typical San Juan afternoon storm over Wolf Creek Pass; it usually clears by evening. Good day to dry out gear if last night was wet.</div>
+    </div>
+
+    <div class="section-header"><h3>🎯 Choose Your Day</h3><div class="section-rule"></div></div>
+    <div class="options-grid">
+      <div class="option-card recommended">
+        <div class="option-label">★ Recommended</div>
+        <h4>Treasure Falls + Pagosa Soak</h4>
+        <p>Quick waterfall leg-stretch on the way down Wolf Creek Pass, then a hot-springs soak in Pagosa before an easy cruise into Durango with the afternoon free for chores and food.</p>
+        <div class="option-stops"><strong>Stops:</strong> Treasure Falls → Pagosa Hot Springs → Durango</div>
+        <div class="option-stops"><strong>Hike:</strong> Treasure Falls (1.0 mi RT)</div>
+        <div class="option-why">Best mix of scenery + recovery. You'll thank the hot springs after two nights at altitude.</div>
+        <div class="option-links">
+          <a class="map-link" href="https://maps.google.com/?q=37.4708,-106.8503" target="_blank">Treasure Falls</a>
+          <a class="map-link" href="https://maps.google.com/?q=37.2637,-107.0093" target="_blank">Pagosa Springs</a>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option B — Get to Town Early</div>
+        <h4>Straight Shot + Durango Riverwalk</h4>
+        <p>Skip the side stops, get to Durango by early afternoon, do laundry and resupply, then stroll the Animas River Trail and downtown Main Ave for dinner.</p>
+        <div class="option-stops"><strong>Walk:</strong> Animas River Trail (flat, any distance)</div>
+        <div class="option-why">Best if last night was rough — maximize rest and a real shower.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=37.2753,-107.8801" target="_blank">Animas River Trail</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option C — Stretch the Legs</div>
+        <h4>Treasure Falls → Piedra Falls</h4>
+        <p>Add a second, quieter waterfall: Piedra Falls is a short walk off a forest road near Pagosa with almost no crowds. Adds ~1 hr but it's a gem.</p>
+        <div class="option-stops"><strong>Hike:</strong> Piedra Falls (0.8 mi RT)</div>
+        <div class="option-why">For a low-key nature fix without committing to a big climb on a transit day.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=Piedra+Falls+Trailhead+Colorado" target="_blank">Piedra Falls TH</a></div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🏨 Tonight — Hampton Inn, Durango</h3><div class="section-rule"></div></div>
+    <table class="hotel-table">
+      <thead><tr><th>Hotel</th><th>Address</th><th>Reservation #</th><th>Notes</th></tr></thead>
+      <tbody><tr>
+        <td>Hampton Inn Durango</td>
+        <td><a href="https://maps.google.com/?q=Hampton+Inn+Durango+3777+Main+Ave" target="_blank">3777 Main Ave, Durango, CO 81301</a></td>
+        <td>93580647</td>
+        <td>North Main near US-550. Pool, laundry nearby, breakfast included. Park the rig, charge devices, top off the cooler.</td>
+      </tr></tbody>
+    </table>
+    <div class="camp-info-box" style="background:var(--sky-pale);border:1px solid var(--sky);border-left:3px solid var(--sky);padding:10px 14px;font-size:8.5pt;margin:8px 0;line-height:1.6;">
+      🧾 <strong>Durango resupply checklist:</strong> groceries (City Market on Main), water jugs &amp; ice, fuel (you won't see reliable gas on the Alpine Loop), propane/canisters, cash for any backcountry fees, and download <strong>offline maps</strong> for the entire San Juan / Alpine Loop area tonight while you have wifi.
+    </div>
+
+    <div class="golden-hour">
+      <div class="golden-hour-header">🌅 Golden Hour</div>
+      <dl>
+        <dt>Where</dt><dd>Durango's Animas River Trail or a Main Ave rooftop/patio. Low-key town evening — no need to chase a viewpoint tonight.</dd>
+        <dt>Why It Matters</dt><dd>It's your one town night between camps. Slow down, eat well (Steamworks or El Moro), and prep for the high country.</dd>
+        <dt>Worth It?</dt><dd>Rest beats a photo tonight. Save the lens for tomorrow's Molas Pass.</dd>
+      </dl>
+    </div>
+
+    <div class="two-col">
+      <div class="quick-decisions">
+        <div class="quick-decisions-header">⚡ Quick Decisions</div>
+        <div class="decision-row"><span class="decision-icon">⛈️</span><span class="decision-trigger">Storm on Wolf Creek</span><span class="decision-arrow">→</span><span class="decision-action">Easy paved pass — just slow for rain; Treasure Falls lot is a fine wait-out spot</span></div>
+        <div class="decision-row"><span class="decision-icon">🛁</span><span class="decision-trigger">Sore from altitude</span><span class="decision-arrow">→</span><span class="decision-action">Prioritize the Pagosa soak; skip the extra waterfall</span></div>
+        <div class="decision-row"><span class="decision-icon">🛒</span><span class="decision-trigger">Arriving late</span><span class="decision-arrow">→</span><span class="decision-action">City Market on Main is open late — resupply tonight so AM is a clean start</span></div>
+      </div>
+      <div class="fuel-box">
+        <div class="fuel-header">⛽ Fuel Strategy</div>
+        <ul>
+          <li><strong>Fill completely in Durango</strong> — gas is scarce and pricey once you're in the mountains</li>
+          <li>Silverton has fuel tomorrow but it's limited &amp; expensive — start full</li>
+          <li>Grab an extra jerry can of fuel + water for two nights on the Alpine Loop</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lc-box">
+      <div class="lc-header">🚙 Land Cruiser Advantage</div>
+      <div class="lc-go"><strong>Push deeper (optional):</strong> Old Lime Creek Road — a scenic dirt alternative paralleling US-550 between Durango and Silverton — is a fun warm-up if you want dirt instead of pavement tomorrow.</div>
+      <div class="lc-avoid"><strong>Today:</strong> Nothing technical — it's a recovery day. Use it to check tire pressures, top off fluids, and clean the air filter after the dunes &amp; Conejos dust.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ DAY 4 ════════ -->
+<div class="day-page" id="day-4">
+  <div class="page-header-bar"><span>🏔 Colorado Overland · Jun 21–29</span><span><strong>DAY 4</strong> · Million Dollar Hwy → Alpine Loop</span></div>
+  <div class="day-banner">
+    <img src="images/04.jpg" alt="Animas Forks ghost town on the Alpine Loop">
+    <div class="day-banner-overlay"></div>
+    <div class="day-banner-content">
+      <div class="day-number">Day 4 of 9</div>
+      <div class="day-title-block">
+        <div class="day-date">June 24 · Durango → Silverton → Alpine Loop (clockwise) · ~3 hrs + trail</div>
+        <div class="day-title">Onto the Alpine Loop</div>
+        <div class="day-subtitle">Climb the southern Million Dollar Highway over Coal Bank &amp; Molas, drop into Silverton, then leave pavement for ghost towns and 12,000-ft passes. Tonight you sleep above treeline.</div>
+      </div>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="map-img">
+      <img src="images/day4-map.png" alt="Day 4 route — Durango to Silverton and onto the Alpine Loop">
+      <a class="map-open" href="https://www.google.com/maps/dir/Durango,+CO/Molas+Pass/Silverton,+CO/Animas+Forks,+CO/Engineer+Pass" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
+    </div>
+    <div class="route-strip">
+      <div class="route-stop"><span class="stop-dot start"></span><span class="stop-label start">Durango</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Molas Pass</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Silverton</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Animas Forks</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏕 Engineer Pass area</span></div>
+    </div>
+
+    <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
+    <div class="feel-box">
+      <span class="energy-badge">⚡ Scenic Drive → Real 4WD</span>
+      The trip shifts into its centerpiece. US-550 climbs through spruce to Molas Pass with the Grenadier Range stacked across the valley, then drops to historic Silverton. Air down, point up County Road 2 to the Animas Forks ghost town, and start the Alpine Loop <strong>clockwise</strong> — climbing the steep switchbacks of Engineer Pass rather than descending them, which keeps you on the inside edge above the big drop-offs. <strong>Why it's special:</strong> you'll camp tonight in alpine tundra with old mine ruins and 13,000-ft peaks for walls.
+    </div>
+
+    <div class="weather-box" data-lat="37.95" data-lon="-107.56" data-date="2026-06-24">
+      <div class="weather-header">🌡️ Weather — Jun 24 · Animas Forks / Engineer (~11,200 ft)</div>
+      <div class="weather-status" data-w="status">Loading… live forecast</div>
+      <div class="weather-grid">
+        <div class="weather-cell"><span class="w-icon">☀️</span><span class="w-label">High</span><span class="w-val" data-w="high" data-fallback="58°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌙</span><span class="w-label">Low</span><span class="w-val" data-w="low" data-fallback="32°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">💨</span><span class="w-label">Wind</span><span class="w-val" data-w="wind" data-fallback="10–18 mph">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌧️</span><span class="w-label">Rain chance</span><span class="w-val" data-w="precip" data-fallback="~45%">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon" data-w="condicon">⛅</span><span class="w-label">Conditions</span><span class="w-val" data-w="cond" data-fallback="PM t-storms">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">❄️</span><span class="w-label">Night</span><span class="w-val">Below freezing likely</span></div>
+        <div class="weather-cell"><span class="w-icon">🌅</span><span class="w-label">Sunrise · Sunset</span><span class="w-val" data-w="sun" data-fallback="5:51 AM · 8:42 PM">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">⚡</span><span class="w-label">Lightning</span><span class="w-val">High risk on passes PM</span></div>
+      </div>
+      <div class="weather-note">⚠️ <strong>You're camping above 11,000 ft.</strong> Nights drop below freezing in late June — bring winter bags. Afternoon <em>thunderstorms with lightning</em> are near-certain over Engineer/Cinnamon — <strong>cross the high passes before noon</strong> and be at camp early. Snowbanks can linger on north-facing pass approaches into late June.</div>
+    </div>
+
+    <div class="gpx-box"><span class="gpx-icon">🗺️</span><div>
+      <span class="gpx-label">GPX Track</span>
+      <span class="gpx-name"><a href="https://www.google.com/maps/dir/Silverton,+CO/Animas+Forks,+CO/Engineer+Pass/Lake+City,+CO/Cinnamon+Pass/Animas+Forks,+CO" target="_blank">04_Alpine_Loop_clockwise.gpx → Open loop in Maps</a></span>
+      <div class="gpx-note">Full clockwise loop: Silverton → Animas Forks → Engineer Pass → Lake City → Cinnamon Pass → back. Load OnX/Gaia — no signal up here.</div>
+    </div></div>
+
+    <div class="section-header"><h3>🎯 Choose Your Day</h3><div class="section-rule"></div></div>
+    <div class="options-grid">
+      <div class="option-card recommended">
+        <div class="option-label">★ Recommended</div>
+        <h4>Molas Stop, Silverton Lunch, Engineer by Afternoon</h4>
+        <p>Photo stop at Molas Lake, lunch + fuel in Silverton, then up to Animas Forks to explore the ghost town before grabbing a high dispersed site near the Engineer Pass approach.</p>
+        <div class="option-stops"><strong>Stops:</strong> Molas Lake → Silverton → Animas Forks ghost town</div>
+        <div class="option-stops"><strong>Walk:</strong> Animas Forks buildings (0.5 mi, flat)</div>
+        <div class="option-why">Paces the day so you're camped early — before the storms — with the big passes saved for tomorrow's clear morning.</div>
+        <div class="option-links">
+          <a class="map-link" href="https://maps.google.com/?q=37.7479,-107.6896" target="_blank">Molas Lake</a>
+          <a class="map-link" href="https://maps.google.com/?q=37.9289,-107.5722" target="_blank">Animas Forks</a>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option B — Lake Day</div>
+        <h4>Crater Lake Hike from Andrews Lake</h4>
+        <p>If you want a leg-stretch with a payoff before the loop, the Crater Lake trail from Andrews Lake delivers a stunning basin under the Grenadiers (do part of it if short on time).</p>
+        <div class="option-stops"><strong>Hike:</strong> Crater Lake (up to 11 mi RT — turn back anytime)</div>
+        <div class="option-why">Best if you got an early Durango start and want a real hike before camping the loop.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=37.7283,-107.7060" target="_blank">Andrews Lake TH</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option C — Get High Early</div>
+        <h4>Straight to Engineer, Climb at Dawn</h4>
+        <p>Run Silverton → Animas Forks and camp right at the Engineer Pass approach so you can summit the pass first thing tomorrow with zero storm risk and morning light.</p>
+        <div class="option-stops"><strong>Walk:</strong> Wander Animas Forks; scout camp pullouts</div>
+        <div class="option-why">Maximizes the safe-weather window for the loop's most exposed sections.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=37.9722,-107.5447" target="_blank">Engineer Pass</a></div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🥾 Short Stops Today</h3><div class="section-rule"></div></div>
+    <div class="hikes-grid">
+      <div class="hike-card"><h4>🏚️ Animas Forks Ghost Town</h4>
+        <div class="hike-meta">0.5 mi · flat · 11,200 ft</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">Best-preserved ghost town on the loop — walk through 1870s mining buildings</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Steady but spread out; quieter late afternoon</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">The Walsh house with its bay window is the iconic shot</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★★☆</span> History + altitude for almost no effort</span></div>
+        </div>
+      </div>
+      <div class="hike-card"><h4>🏔️ Molas Lake Overlook</h4>
+        <div class="hike-meta">roadside–0.5 mi · 10,500 ft</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">Postcard alpine lake with the Grenadier Range behind — classic MDH view</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Popular pullout; easy to find a quiet edge</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Colorado Trail crosses here — watch for thru-hikers</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★★☆</span> Huge view, zero effort</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🏕️ Camp Tonight — Alpine Loop Dispersed</h3><div class="section-rule"></div></div>
+    <div class="warning">⛰️ Dispersed camping is allowed on the <strong>National Forest</strong> portions of the loop (not on private mining claims — watch for "No Trespassing"). Check the San Juan / GMUG MVUM. Above treeline = no wind or storm shelter; pick your site for the forecast.</div>
+    <div class="camp-grid">
+      <div><span class="camp-cell-header view">🌄 Best View</span><div class="camp-cell">
+        <strong>Engineer Pass approach pullouts</strong>
+        High tundra benches above Animas Forks with 13ers all around and old mine ruins — unreal sunrise, but fully exposed.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=37.955,-107.560" target="_blank">~37.955, -107.560 (scout pullouts)</a></span>
+        <span class="price">Free · 4WD · no shelter — calm nights only</span>
+      </div></div>
+      <div><span class="camp-cell-header wind">🛡️ Storm-Protected</span><div class="camp-cell">
+        <strong>South Mineral Creek (FR 585)</strong>
+        Many established dispersed sites in the trees ~3 mi N of Silverton off US-550 — sheltered, near water &amp; Ice Lake TH. Best wind/storm option.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=37.8089,-107.7717" target="_blank">37.8089, -107.7717</a></span>
+        <span class="price">Free dispersed + South Mineral CG nearby</span>
+      </div></div>
+      <div><span class="camp-cell-header backup">🔄 Easy Backup</span><div class="camp-cell">
+        <strong>Silverton / Burrows Park</strong>
+        Silverton has campgrounds &amp; lodging if storms hammer the high country. Burrows Park (Cinnamon side, ~5 mi from Lake City) has dispersed sites if you push east.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=37.8119,-107.6645" target="_blank">Silverton</a></span>
+        <span class="price">Town fallback · any vehicle</span>
+      </div></div>
+    </div>
+
+    <div class="golden-hour">
+      <div class="golden-hour-header">🌅 Golden Hour</div>
+      <dl>
+        <dt>Where</dt><dd>From a high camp near Animas Forks/Engineer — the ruins and tundra catch the last light while the peaks go pink.</dd>
+        <dt>Why It Matters</dt><dd>Storms usually clear by evening up here, leaving crystal alpenglow and some of the darkest skies in Colorado for stargazing.</dd>
+        <dt>Worth It?</dt><dd>Yes — just be already camped. You don't want to be driving a high pass in fading light.</dd>
+      </dl>
+    </div>
+
+    <div class="two-col">
+      <div class="quick-decisions">
+        <div class="quick-decisions-header">⚡ Quick Decisions</div>
+        <div class="decision-row"><span class="decision-icon">⚡</span><span class="decision-trigger">Storm building</span><span class="decision-arrow">→</span><span class="decision-action">Do NOT start Engineer Pass — wait below treeline or camp South Mineral; run it clear tomorrow AM</span></div>
+        <div class="decision-row"><span class="decision-icon">❄️</span><span class="decision-trigger">Snowbank on pass</span><span class="decision-arrow">→</span><span class="decision-action">Late-June drifts can block the top — don't push it solo; turn back &amp; reroute via Cinnamon</span></div>
+        <div class="decision-row"><span class="decision-icon">💨</span><span class="decision-trigger">Windy/cold camp</span><span class="decision-arrow">→</span><span class="decision-action">Drop to South Mineral Creek timber — way more comfortable than exposed tundra</span></div>
+        <div class="decision-row"><span class="decision-icon">🚧</span><span class="decision-trigger">"No Trespassing"</span><span class="decision-arrow">→</span><span class="decision-action">Mining claims are private — only camp on signed NF land / established sites</span></div>
+      </div>
+      <div class="fuel-box">
+        <div class="fuel-header">⛽ Fuel Strategy</div>
+        <ul>
+          <li>You started full in Durango — <strong>top off again in Silverton</strong> before leaving pavement</li>
+          <li>No fuel on the loop or in Lake City's backcountry — plan to run the whole loop on what you carry</li>
+          <li>Air down for the rocky shelf roads; carry your spare fuel + water</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lc-box">
+      <div class="lc-header">🚙 Land Cruiser Advantage</div>
+      <div class="lc-go"><strong>Push deeper:</strong> The Engineer/Cinnamon shelf roads and side spurs (California Gulch, Picayune/Placer Gulch loop) are perfect Land Cruiser terrain. Going clockwise up Engineer is the recommended, safer line.</div>
+      <div class="lc-avoid"><strong>Avoid:</strong> Black California Gulch and the harder Silverton trails (Black Bear, etc.) — not needed and far more committing than the Alpine Loop itself.</div>
+    </div>
+  </div>
+</div>
+<!-- ════════ DAY 5 ════════ -->
+<div class="day-page" id="day-5">
+  <div class="page-header-bar"><span>🏔 Colorado Overland · Jun 21–29</span><span><strong>DAY 5</strong> · Alpine Loop · Handies / American Basin</span></div>
+  <div class="day-banner">
+    <img src="images/05.jpg" alt="American Basin wildflowers beneath Handies Peak">
+    <div class="day-banner-overlay"></div>
+    <div class="day-banner-content">
+      <div class="day-number">Day 5 of 9</div>
+      <div class="day-title-block">
+        <div class="day-date">June 25 · Explore the Alpine Loop + big hike · trail day</div>
+        <div class="day-title">The Wildflower 14er</div>
+        <div class="day-subtitle">A full day in the high country: cross Engineer or run the basins, then earn the trip's marquee hike — American Basin to Handies Peak, where the columbine runs to the horizon and you can summit a 14er from camp.</div>
+      </div>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="map-img">
+      <img src="images/day5-map.png" alt="Day 5 — Alpine Loop exploration and American Basin / Handies Peak">
+      <a class="map-open" href="https://www.google.com/maps/dir/Animas+Forks,+CO/Cinnamon+Pass/American+Basin+Trailhead/Handies+Peak" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
+    </div>
+    <div class="route-strip">
+      <div class="route-stop"><span class="stop-dot start"></span><span class="stop-label start">Camp</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Cinnamon Pass</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">American Basin</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">⛰ Handies Peak 14,058'</span></div>
+    </div>
+
+    <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
+    <div class="feel-box">
+      <span class="energy-badge">🥾 Big Hike Day</span>
+      This is the day you slow down and walk. American Basin in late June is one of the great wildflower shows in North America — columbine, Parry's primrose, paintbrush carpeting the basin under a ring of peaks. From the trailhead you can climb Handies Peak, the most accessible 14er in the San Juans, and stand on top of Colorado before lunch. <strong>Why it's special:</strong> you drove your camp to 11,500 ft, so the summit is genuinely in reach — start early, watch the sky, and savor it.
+    </div>
+
+    <div class="weather-box" data-lat="37.93" data-lon="-107.50" data-date="2026-06-25">
+      <div class="weather-header">🌡️ Weather — Jun 25 · American Basin / Handies (11.5k–14k ft)</div>
+      <div class="weather-status" data-w="status">Loading… live forecast</div>
+      <div class="weather-grid">
+        <div class="weather-cell"><span class="w-icon">☀️</span><span class="w-label">High (basin)</span><span class="w-val" data-w="high" data-fallback="55°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌙</span><span class="w-label">Low</span><span class="w-val" data-w="low" data-fallback="30°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">💨</span><span class="w-label">Wind</span><span class="w-val" data-w="wind" data-fallback="12–22 mph">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌧️</span><span class="w-label">Rain chance</span><span class="w-val" data-w="precip" data-fallback="~50%">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon" data-w="condicon">⛅</span><span class="w-label">Conditions</span><span class="w-val" data-w="cond" data-fallback="AM clear, PM storms">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🥶</span><span class="w-label">Summit feels</span><span class="w-val">~15–25°F colder + wind</span></div>
+        <div class="weather-cell"><span class="w-icon">🌅</span><span class="w-label">Sunrise · Sunset</span><span class="w-val" data-w="sun" data-fallback="5:51 AM · 8:42 PM">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">⚡</span><span class="w-label">Summit by</span><span class="w-val">NOON — then descend</span></div>
+      </div>
+      <div class="weather-note">⚠️ <strong>Golden rule of the San Juans: be off the summit by noon.</strong> Afternoon lightning kills above treeline. Start the Handies hike at first light (5:30–6 AM). The summit is 15–25°F colder than the basin with brutal wind — pack a shell, gloves, and hat even in late June. Snowfields may linger on the upper route.</div>
+    </div>
+
+    <div class="section-header"><h3>🎯 Choose Your Day</h3><div class="section-rule"></div></div>
+    <div class="options-grid">
+      <div class="option-card recommended">
+        <div class="option-label">★ Recommended</div>
+        <h4>Summit Handies, Then Wander the Basin</h4>
+        <p>Dawn start up the American Basin trail to the 14,058-ft summit (down by late morning), then spend the afternoon strolling the wildflower basin and a side spur by truck.</p>
+        <div class="option-stops"><strong>Hike:</strong> Handies via American Basin (5.5–7.5 mi RT, 2,400 ft gain)</div>
+        <div class="option-why">The signature payoff of the whole trip — a real summit with the safest, most beautiful approach in the range.</div>
+        <div class="option-links">
+          <a class="map-link" href="https://maps.google.com/?q=37.9258,-107.5044" target="_blank">American Basin TH</a>
+          <a class="map-link" href="https://maps.google.com/?q=37.9131,-107.5042" target="_blank">Handies summit</a>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option B — Flowers, No Summit</div>
+        <h4>Sloan Lake &amp; the Basin Floor</h4>
+        <p>Skip the peak and hike the basin to Sloan Lake — most of the wildflowers, a fraction of the effort, and you turn around at a glassy alpine tarn.</p>
+        <div class="option-stops"><strong>Hike:</strong> American Basin to Sloan Lake (~2.5–3 mi RT)</div>
+        <div class="option-why">Best if the altitude's heavy or the forecast's iffy — still the iconic scenery, low commitment.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=37.9258,-107.5044" target="_blank">American Basin TH</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option C — Drive &amp; Explore</div>
+        <h4>Lake City Lunch + Mine Spurs</h4>
+        <p>Drop over Cinnamon to Lake City for a hot lunch and supplies, then explore mining spurs (Carson ghost town, Cinnamon's overlooks) on the way back.</p>
+        <div class="option-stops"><strong>Walk:</strong> Lake City stroll + short spur viewpoints</div>
+        <div class="option-why">A lower-effort day if legs are tired — still epic driving, plus a resupply and real food.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=38.0303,-107.3151" target="_blank">Lake City</a></div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🥾 The Marquee Hike</h3><div class="section-rule"></div></div>
+    <div class="hikes-grid">
+      <div class="hike-card"><h4>⛰️ Handies Peak (14,058')</h4>
+        <div class="hike-meta">5.5–7.5 mi RT · 2,400 ft gain · 4.5–6 hrs</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">Most accessible San Juan 14er — 360° summit over a dozen ranges</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Popular but never crowded; dawn starters have it quiet</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Class 1–2 the whole way; the basin below is peak wildflower bloom</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★★★</span> A 14er you can actually do</span></div>
+        </div>
+      </div>
+      <div class="hike-card"><h4>🌸 American Basin Floor</h4>
+        <div class="hike-meta">1–3 mi · gentle · 11,300+ ft</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">Columbine, primrose, paintbrush — a legendary alpine flower show</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Day-trippers mid-morning; early &amp; late are serene</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Sloan Lake sits in a cirque at the basin's head — perfect turnaround</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★★★</span> Max beauty, gentle grade</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🏕️ Camp Tonight — Alpine Loop Dispersed</h3><div class="section-rule"></div></div>
+    <div class="camp-grid">
+      <div><span class="camp-cell-header view">🌄 Best View</span><div class="camp-cell">
+        <strong>American Basin pullouts</strong>
+        Camp in the wildflowers at the foot of Handies — wake up under the peak. Limited established spots; arrive early, tread lightly.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=37.93,-107.50" target="_blank">~37.93, -107.50</a></span>
+        <span class="price">Free · 4WD · fragile tundra — established sites only</span>
+      </div></div>
+      <div><span class="camp-cell-header wind">🛡️ Storm-Protected</span><div class="camp-cell">
+        <strong>Burrows Park / Grassy Gulch (trees)</strong>
+        Lower, timbered dispersed sites along CR-30 toward Lake City — wind/storm shelter and easy trailhead access next morning.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=37.940,-107.420" target="_blank">~37.940, -107.420 (scout)</a></span>
+        <span class="price">Free · more sheltered · near water</span>
+      </div></div>
+      <div><span class="camp-cell-header backup">🔄 Easy Backup</span><div class="camp-cell">
+        <strong>Lake City campgrounds</strong>
+        If weather turns hard, drop to Lake City for developed campgrounds or a motel, hot meal, and a resupply.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=38.0303,-107.3151" target="_blank">Lake City</a></span>
+        <span class="price">Town fallback</span>
+      </div></div>
+    </div>
+
+    <div class="golden-hour">
+      <div class="golden-hour-header">🌅 Golden Hour</div>
+      <dl>
+        <dt>Where</dt><dd>The American Basin floor — late light sweeps the wildflowers and lights Handies and the cirque walls.</dd>
+        <dt>Why It Matters</dt><dd>After the storms clear, the basin glows and the columbine practically fluoresces. Then the Milky Way — this is Bortle-2 dark sky.</dd>
+        <dt>Worth It?</dt><dd>One of the best evenings of the trip. Layer up — it gets cold fast at 11,500 ft.</dd>
+      </dl>
+    </div>
+
+    <div class="two-col">
+      <div class="quick-decisions">
+        <div class="quick-decisions-header">⚡ Quick Decisions</div>
+        <div class="decision-row"><span class="decision-icon">⚡</span><span class="decision-trigger">Clouds by 11 AM</span><span class="decision-arrow">→</span><span class="decision-action">Turn around — no summit is worth a strike. The flowers don't require a peak</span></div>
+        <div class="decision-row"><span class="decision-icon">🤕</span><span class="decision-trigger">Altitude headache</span><span class="decision-arrow">→</span><span class="decision-action">Hydrate, slow down, do Sloan Lake instead of the summit; sleep lower (Burrows)</span></div>
+        <div class="decision-row"><span class="decision-icon">❄️</span><span class="decision-trigger">Snow on upper route</span><span class="decision-arrow">→</span><span class="decision-action">Skip the final pitch if it's a steep snowfield without traction gear</span></div>
+        <div class="decision-row"><span class="decision-icon">🅿️</span><span class="decision-trigger">TH lot full</span><span class="decision-arrow">→</span><span class="decision-action">Park lower &amp; walk in — adds ~1 mi each way; or hike right from your camp</span></div>
+      </div>
+      <div class="fuel-box">
+        <div class="fuel-header">⛽ Fuel Strategy</div>
+        <ul>
+          <li>No fuel up here — Lake City has gas if you drop over Cinnamon</li>
+          <li>Conserve: idle less, coast the descents, you've got tomorrow's drive to Ouray too</li>
+          <li>Refill water from creeks with a filter — plenty of snowmelt</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lc-box">
+      <div class="lc-header">🚙 Land Cruiser Advantage</div>
+      <div class="lc-go"><strong>Push deeper:</strong> Driving your camp to the American Basin trailhead at 11,500 ft is the whole advantage — it turns a 14er into a doable day. Spurs like Carson ghost town reward the truck too.</div>
+      <div class="lc-avoid"><strong>Avoid:</strong> Driving off established tracks in the basin — the tundra is decades to recover. Park at the lot and walk.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ DAY 6 ════════ -->
+<div class="day-page" id="day-6">
+  <div class="page-header-bar"><span>🏔 Colorado Overland · Jun 21–29</span><span><strong>DAY 6</strong> · Finish Loop → Ouray</span></div>
+  <div class="day-banner">
+    <img src="images/06.jpg" alt="Ouray, the Switzerland of America, in its box canyon">
+    <div class="day-banner-overlay"></div>
+    <div class="day-banner-content">
+      <div class="day-number">Day 6 of 9</div>
+      <div class="day-title-block">
+        <div class="day-date">June 26 · Finish Alpine Loop → Million Dollar Hwy → Ouray · ~2 hrs</div>
+        <div class="day-title">Down to Ouray</div>
+        <div class="day-subtitle">Close the loop over Cinnamon, then drive the wildest stretch of the Million Dollar Highway — Red Mountain Pass and Bear Creek Falls — into Ouray, the Switzerland of America, for a soft bed and a soak.</div>
+      </div>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="map-img">
+      <img src="images/day6-map.png" alt="Day 6 — finish Alpine Loop, Million Dollar Highway to Ouray">
+      <a class="map-open" href="https://www.google.com/maps/dir/Cinnamon+Pass/Animas+Forks,+CO/Silverton,+CO/Red+Mountain+Pass/Bear+Creek+Falls+Overlook/Ouray,+CO" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
+    </div>
+    <div class="route-strip">
+      <div class="route-stop"><span class="stop-dot start"></span><span class="stop-label start">Camp</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Cinnamon Pass</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Silverton</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Red Mtn Pass</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏨 Ouray</span></div>
+    </div>
+
+    <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
+    <div class="feel-box">
+      <span class="energy-badge">⚡ Easy Drive + Town</span>
+      A shorter day with two of the trip's best stretches of road. Finish the Alpine Loop over Cinnamon Pass back to Animas Forks and Silverton, then aim the truck north on US-550 for the famous part of the Million Dollar Highway — Red Mountain Pass with its rust-colored peaks and old mining ruins, the Uncompahgre Gorge, and the roadside thunder of Bear Creek Falls — before the road corkscrews down into Ouray. <strong>Why it's special:</strong> a real bed, a hot spring, and a town wrapped in a box-canyon amphitheater of waterfalls.
+    </div>
+
+    <div class="weather-box" data-lat="38.023" data-lon="-107.671" data-date="2026-06-26">
+      <div class="weather-header">🌡️ Weather — Jun 26 · Ouray (~7,800 ft)</div>
+      <div class="weather-status" data-w="status">Loading… live forecast</div>
+      <div class="weather-grid">
+        <div class="weather-cell"><span class="w-icon">☀️</span><span class="w-label">High</span><span class="w-val" data-w="high" data-fallback="78°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌙</span><span class="w-label">Low</span><span class="w-val" data-w="low" data-fallback="48°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">💨</span><span class="w-label">Wind</span><span class="w-val" data-w="wind" data-fallback="5–12 mph">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌧️</span><span class="w-label">Rain chance</span><span class="w-val" data-w="precip" data-fallback="~35%">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon" data-w="condicon">🌤️</span><span class="w-label">Conditions</span><span class="w-val" data-w="cond" data-fallback="PM storms">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🏔️</span><span class="w-label">Red Mtn Pass</span><span class="w-val">Cooler, watch for rain</span></div>
+        <div class="weather-cell"><span class="w-icon">🌅</span><span class="w-label">Sunrise · Sunset</span><span class="w-val" data-w="sun" data-fallback="5:53 AM · 8:43 PM">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">♨️</span><span class="w-label">Hot springs eve</span><span class="w-val">Perfect</span></div>
+      </div>
+      <div class="weather-note">Warm in town, cool on the pass. The Million Dollar Highway has <strong>no guardrails</strong> on big drop-offs — if an afternoon storm hits Red Mountain Pass, slow way down for rain &amp; rockfall. Evenings in Ouray are mild and gorgeous — ideal for the Perimeter Trail or a hot-springs soak.</div>
+    </div>
+
+    <div class="section-header"><h3>🎯 Choose Your Afternoon in Ouray</h3><div class="section-rule"></div></div>
+    <div class="options-grid">
+      <div class="option-card recommended">
+        <div class="option-label">★ Recommended</div>
+        <h4>Perimeter Trail Loop</h4>
+        <p>Ouray's signature hike wraps the whole town — cliffs, a tunnel, and overlooks of Cascade and Box Cañon Falls. Do the full loop or just the scenic Box Cañon–Cascade segment.</p>
+        <div class="option-stops"><strong>Hike:</strong> Perimeter Trail (~5–6.5 mi loop) or a 2-mi segment</div>
+        <div class="option-why">Best single hike in town — knocks out the waterfalls and views in one go, right from the hotel.</div>
+        <div class="option-links">
+          <a class="map-link" href="https://maps.google.com/?q=38.0206,-107.6745" target="_blank">Box Cañon Falls</a>
+          <a class="map-link" href="https://maps.google.com/?q=38.0258,-107.6680" target="_blank">Cascade Falls</a>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option B — Easy Iconic</div>
+        <h4>Box Cañon Falls + Hot Springs</h4>
+        <p>Short, jaw-dropping walk into a slot canyon to a 285-ft falls, then soak at the Ouray Hot Springs Pool. Maximum payoff, minimal effort after a week of altitude.</p>
+        <div class="option-stops"><strong>Walk:</strong> Box Cañon Falls (~0.5 mi) + soak</div>
+        <div class="option-why">Best if your legs are cooked from Handies — pure reward.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=38.0247,-107.6716" target="_blank">Ouray Hot Springs</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option C — One More Climb</div>
+        <h4>Lower Cascade / Upper Cascade Falls</h4>
+        <p>A steeper out-and-back to Upper Cascade Falls and the old Chief Ouray Mine clinging to the cliff above town — big views, fewer people.</p>
+        <div class="option-stops"><strong>Hike:</strong> Upper Cascade Falls (~2.4 mi RT, steep)</div>
+        <div class="option-why">For energy to burn and a dramatic perch over Ouray.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=38.0258,-107.6680" target="_blank">Cascade Falls TH</a></div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🥾 Hikes in Detail</h3><div class="section-rule"></div></div>
+    <div class="hikes-grid">
+      <div class="hike-card"><h4>🔄 Ouray Perimeter Trail</h4>
+        <div class="hike-meta">~5–6.5 mi loop · 1,200 ft · 2.5–3.5 hrs</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">Cliffside paths, a rock tunnel, and overlooks of two waterfalls — circles the whole town</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Moderate; segments near the falls busiest</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Walk a tunnel and cross above Box Cañon's roar; start/stop anywhere in town</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★★★</span> Town's best, infinitely flexible</span></div>
+        </div>
+      </div>
+      <div class="hike-card"><h4>💦 Box Cañon Falls</h4>
+        <div class="hike-meta">~0.5 mi · easy · small fee</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">A 285-ft falls thundering through a narrow quartzite slot — feel it in your chest</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Popular; go early or near closing</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Metal catwalk bolted into the canyon wall; black swifts nest here</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★★☆</span> Huge for the effort</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🏨 Tonight — Quality Inn, Ouray</h3><div class="section-rule"></div></div>
+    <table class="hotel-table">
+      <thead><tr><th>Hotel</th><th>Address</th><th>Reservation #</th><th>Notes</th></tr></thead>
+      <tbody><tr>
+        <td>Quality Inn Ouray</td>
+        <td><a href="https://maps.google.com/?q=Quality+Inn+191+5th+Ave+Ouray+CO" target="_blank">191 5th Ave, Ouray, CO 81427</a></td>
+        <td>38245206</td>
+        <td>Walkable to hot springs, Main St dining, and Perimeter Trail access. Rinse the loop's dust off and recharge before the Rimrocker.</td>
+      </tr></tbody>
+    </table>
+
+    <div class="golden-hour">
+      <div class="golden-hour-header">🌅 Golden Hour</div>
+      <dl>
+        <dt>Where</dt><dd>The Perimeter Trail overlook above town, or up the road toward Yankee Boy Basin for the amphitheater of peaks catching last light.</dd>
+        <dt>Why It Matters</dt><dd>Ouray sits in a bowl of 13ers — sunset paints the rims long after the valley floor is in shade.</dd>
+        <dt>Worth It?</dt><dd>Yes; then dinner on Main St. The hot springs stay open into the evening if you'd rather soak under the stars.</dd>
+      </dl>
+    </div>
+
+    <div class="two-col">
+      <div class="quick-decisions">
+        <div class="quick-decisions-header">⚡ Quick Decisions</div>
+        <div class="decision-row"><span class="decision-icon">⛈️</span><span class="decision-trigger">Storm on Red Mtn Pass</span><span class="decision-arrow">→</span><span class="decision-action">No guardrails + wet rock — slow to a crawl, use pullouts, don't rush the descent into Ouray</span></div>
+        <div class="decision-row"><span class="decision-icon">🦵</span><span class="decision-trigger">Legs wrecked</span><span class="decision-arrow">→</span><span class="decision-action">Box Cañon + hot springs instead of the full Perimeter loop</span></div>
+        <div class="decision-row"><span class="decision-icon">🅿️</span><span class="decision-trigger">Town parking full</span><span class="decision-arrow">→</span><span class="decision-action">Park at the hotel and walk — Ouray is tiny and entirely walkable</span></div>
+      </div>
+      <div class="fuel-box">
+        <div class="fuel-header">⛽ Fuel Strategy</div>
+        <ul>
+          <li>Fuel in Silverton on the way out, or top off in Ouray tonight</li>
+          <li>Tomorrow's Rimrocker has long stretches with no services — start full from Montrose</li>
+          <li>Montrose (Day 7 AM) is the place for a big grocery + fuel resupply</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lc-box">
+      <div class="lc-header">🚙 Land Cruiser Advantage</div>
+      <div class="lc-go"><strong>Push deeper (optional):</strong> Yankee Boy Basin above Ouray is a short, gorgeous 4WD spur to a wildflower bowl and waterfalls if you want one more alpine drive before town.</div>
+      <div class="lc-avoid"><strong>Avoid:</strong> The hard Ouray trails (Imogene, Black Bear) aren't needed. The Million Dollar Highway itself is paved — just respect the no-guardrail drop-offs.</div>
+    </div>
+  </div>
+</div>
+<!-- ════════ DAY 7 ════════ -->
+<div class="day-page" id="day-7">
+  <div class="page-header-bar"><span>🏔 Colorado Overland · Jun 21–29</span><span><strong>DAY 7</strong> · Ouray → Montrose → Rimrocker</span></div>
+  <div class="day-banner">
+    <img src="images/07.jpg" alt="Paradox Valley overlook on the Rimrocker Trail">
+    <div class="day-banner-overlay"></div>
+    <div class="day-banner-content">
+      <div class="day-number">Day 7 of 9</div>
+      <div class="day-title-block">
+        <div class="day-date">June 27 · Ouray → Montrose → Rimrocker Trail · ~4 hrs + trail</div>
+        <div class="day-title">The Rimrocker Begins</div>
+        <div class="day-subtitle">Leave the high San Juans for canyon country — resupply in Montrose, then start the 160-mile Rimrocker Trail across the Uncompahgre Plateau toward the red-rock rim above Paradox Valley.</div>
+      </div>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="map-img">
+      <img src="images/day7-map.png" alt="Day 7 — Ouray to Montrose and onto the Rimrocker Trail">
+      <a class="map-open" href="https://www.google.com/maps/dir/Ouray,+CO/Montrose,+CO/Nucla,+CO/Paradox+Valley,+CO/Buckeye+Reservoir" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
+    </div>
+    <div class="route-strip">
+      <div class="route-stop"><span class="stop-dot start"></span><span class="stop-label start">Ouray</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Montrose</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Rimrocker TH</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Nucla / Paradox</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏕 Paradox rim / Buckeye</span></div>
+    </div>
+
+    <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
+    <div class="feel-box">
+      <span class="energy-badge">⚡ Resupply + Long Trail</span>
+      The landscape transforms again — alpine gives way to piñon, sage, and slickrock. Knock out a real resupply in Montrose (fuel, groceries, water, ice), then pick up the Rimrocker Trail and start working west across the Uncompahgre Plateau. The reward tonight: a rim campsite high above the surreal Paradox Valley, where the Dolores River cuts <em>across</em> the valley instead of down it. <strong>Why it's special:</strong> after a week of mountains, you fall asleep on the edge of red-rock canyon country with a sunset that runs forever.
+    </div>
+
+    <div class="weather-box" data-lat="38.30" data-lon="-108.85" data-date="2026-06-27">
+      <div class="weather-header">🌡️ Weather — Jun 27 · Paradox Valley rim (~7,500 ft)</div>
+      <div class="weather-status" data-w="status">Loading… live forecast</div>
+      <div class="weather-grid">
+        <div class="weather-cell"><span class="w-icon">☀️</span><span class="w-label">High</span><span class="w-val" data-w="high" data-fallback="82°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌙</span><span class="w-label">Low</span><span class="w-val" data-w="low" data-fallback="50°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">💨</span><span class="w-label">Wind</span><span class="w-val" data-w="wind" data-fallback="8–16 mph">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌧️</span><span class="w-label">Rain chance</span><span class="w-val" data-w="precip" data-fallback="~25%">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon" data-w="condicon">☀️</span><span class="w-label">Conditions</span><span class="w-val" data-w="cond" data-fallback="Mostly sunny">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌬️</span><span class="w-label">Rim wind</span><span class="w-val">Exposed — gusty</span></div>
+        <div class="weather-cell"><span class="w-icon">🌅</span><span class="w-label">Sunrise · Sunset</span><span class="w-val" data-w="sun" data-fallback="6:00 AM · 8:46 PM">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🔥</span><span class="w-label">Fire danger</span><span class="w-val">Check BLM ban</span></div>
+      </div>
+      <div class="weather-note">Drier, hotter, and lower than the mountains — proper canyon country. The Paradox rim is gorgeous but <strong>exposed to wind</strong>; if it's blowing, drop to the timber/Buckeye. Late-June fire restrictions are common on BLM — <em>verify before any fire.</em></div>
+    </div>
+
+    <div class="gpx-box"><span class="gpx-icon">🗺️</span><div>
+      <span class="gpx-label">GPX Track</span>
+      <span class="gpx-name"><a href="https://www.onxmaps.com/offroad/trails/us/colorado/rim-rocker" target="_blank">07_Rimrocker_Trail.gpx → Rimrocker on OnX Offroad</a></span>
+      <div class="gpx-note">160-mi Montrose→Moab OHV route. Download the full track to OnX/Gaia — long no-signal stretches. Well-signed but junctions are easy to miss.</div>
+    </div></div>
+
+    <div class="section-header"><h3>🎯 Choose Your Day</h3><div class="section-rule"></div></div>
+    <div class="options-grid">
+      <div class="option-card recommended">
+        <div class="option-label">★ Recommended</div>
+        <h4>Resupply, Then Run to the Paradox Rim</h4>
+        <p>Efficient Montrose resupply, then drive the Rimrocker west and claim the famous overlook campsite above Paradox Valley before anyone else does.</p>
+        <div class="option-stops"><strong>Stops:</strong> Montrose (fuel/food) → Rimrocker → Paradox Valley Overlook</div>
+        <div class="option-stops"><strong>Walk:</strong> Rim wander at camp (~1 mi, your pace)</div>
+        <div class="option-why">Sets up the best sunset of the canyon stretch and a strong position to finish into Moab tomorrow.</div>
+        <div class="option-links">
+          <a class="map-link" href="https://maps.google.com/?q=38.4783,-107.8762" target="_blank">Montrose</a>
+          <a class="map-link" href="https://maps.google.com/?q=38.33,-108.88" target="_blank">Paradox rim (scout)</a>
+        </div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option B — Add a Stop</div>
+        <h4>Black Canyon Quick Look</h4>
+        <p>If you want one more big view before the desert, Black Canyon of the Gunnison's south rim is a short detour from Montrose — a dizzying 2,000-ft chasm.</p>
+        <div class="option-stops"><strong>Walk:</strong> Gunnison Point / rim overlooks (&lt;1 mi)</div>
+        <div class="option-why">Adds ~1.5 hrs round trip but it's a stunning, easy-to-reach National Park.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=38.5754,-107.6912" target="_blank">Black Canyon S. Rim</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option C — Mileage Push</div>
+        <h4>Camp at Buckeye Reservoir</h4>
+        <p>Push further west and camp at the established (free) Buckeye Reservoir area near the La Sals — shorter finish into Moab tomorrow, with water and a quiet shoreline.</p>
+        <div class="option-stops"><strong>Walk:</strong> Reservoir shoreline loop</div>
+        <div class="option-why">Best if you got a late Ouray start or want easy water + a sheltered, established camp.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=Buckeye+Reservoir+Colorado" target="_blank">Buckeye Reservoir</a></div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🏕️ Camp Tonight — Rimrocker Dispersed</h3><div class="section-rule"></div></div>
+    <div class="warning">🧭 Best campsites are <strong>east of Buckeye</strong>; it gets sparse until you drop into BLM near Moab. Grab a rim or Buckeye site tonight rather than gambling on the dry western stretch. Pack out everything; respect fire bans.</div>
+    <div class="camp-grid">
+      <div><span class="camp-cell-header view">🌄 Best View</span><div class="camp-cell">
+        <strong>Paradox Valley Overlook</strong>
+        A well-known established site on the rim with the whole Paradox Valley below — spectacular, but fully exposed. Get it early; it's popular.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=38.33,-108.88" target="_blank">~38.33, -108.88 (scout the rim)</a></span>
+        <span class="price">Free dispersed · 1 prime site · exposed</span>
+      </div></div>
+      <div><span class="camp-cell-header wind">🛡️ Wind-Protected</span><div class="camp-cell">
+        <strong>Buckeye Reservoir area</strong>
+        Large established free campground with toilets &amp; fire rings, tucked lower with tree cover and water — the safe bet if the rim is windy.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=Buckeye+Reservoir+Colorado" target="_blank">Buckeye Reservoir</a></span>
+        <span class="price">Free · toilets · sheltered · water</span>
+      </div></div>
+      <div><span class="camp-cell-header backup">🔄 Easy Backup</span><div class="camp-cell">
+        <strong>Side-road dispersed / La Sal</strong>
+        Many spurs off the Rimrocker have dispersed pullouts; Medicine Lakes / La Sal Pass area to the west is a fallback near the Utah line.
+        <span class="coords">📍 <a href="https://maps.google.com/?q=38.27,-108.95" target="_blank">~38.27, -108.95 (spurs)</a></span>
+        <span class="price">Free · scout established spots only</span>
+      </div></div>
+    </div>
+
+    <div class="golden-hour">
+      <div class="golden-hour-header">🌅 Golden Hour</div>
+      <dl>
+        <dt>Where</dt><dd>The Paradox Valley rim — the low sun rakes across the valley and the Dolores River canyon, lighting the red walls on fire.</dd>
+        <dt>Why It Matters</dt><dd>First true desert sunset of the trip and a giant sky. The geology here (a salt-collapse valley the river cuts across) is bizarre and beautiful in raking light.</dd>
+        <dt>Worth It?</dt><dd>Absolutely — just secure the rim site early so you're set up for it. Then a stargazing finale.</dd>
+      </dl>
+    </div>
+
+    <div class="two-col">
+      <div class="quick-decisions">
+        <div class="quick-decisions-header">⚡ Quick Decisions</div>
+        <div class="decision-row"><span class="decision-icon">💨</span><span class="decision-trigger">Rim too windy</span><span class="decision-arrow">→</span><span class="decision-action">Drop to Buckeye Reservoir's tree cover — far more comfortable</span></div>
+        <div class="decision-row"><span class="decision-icon">🔥</span><span class="decision-trigger">Fire ban</span><span class="decision-arrow">→</span><span class="decision-action">Stove only; no campfires on BLM in late June if restricted</span></div>
+        <div class="decision-row"><span class="decision-icon">🕐</span><span class="decision-trigger">Late start from Ouray</span><span class="decision-arrow">→</span><span class="decision-action">Skip Black Canyon, head straight for a rim or Buckeye site before dark</span></div>
+        <div class="decision-row"><span class="decision-icon">🧭</span><span class="decision-trigger">Missed a junction</span><span class="decision-arrow">→</span><span class="decision-action">Rimrocker is signed but subtle — trust the GPX track, not the biggest road</span></div>
+      </div>
+      <div class="fuel-box">
+        <div class="fuel-header">⛽ Fuel Strategy</div>
+        <ul>
+          <li><strong>Fill completely in Montrose</strong> + carry spare fuel — the Rimrocker is long and remote</li>
+          <li>Nucla / Naturita have small-town gas if needed mid-route</li>
+          <li>Next reliable services are in Moab tomorrow — plan water for 2 days</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lc-box">
+      <div class="lc-header">🚙 Land Cruiser Advantage</div>
+      <div class="lc-go"><strong>Push deeper:</strong> The Rimrocker is mostly moderate dirt/2-track — easy for your rig — with side spurs to overlooks and old uranium-mining roads worth a detour if you have time.</div>
+      <div class="lc-avoid"><strong>Avoid:</strong> Getting strung out on the dry western leg with low fuel/water. Carry reserves and keep an eye on the gauge.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ DAY 8 ════════ -->
+<div class="day-page" id="day-8">
+  <div class="page-header-bar"><span>🏔 Colorado Overland · Jun 21–29</span><span><strong>DAY 8</strong> · Finish Rimrocker → Moab Rim</span></div>
+  <div class="day-banner">
+    <img src="images/08.jpg" alt="Canyonlands Overlook above the Colorado River">
+    <div class="day-banner-overlay"></div>
+    <div class="day-banner-content">
+      <div class="day-number">Day 8 of 9</div>
+      <div class="day-title-block">
+        <div class="day-date">June 28 · Finish Rimrocker (or extra day) → Moab rim camp · trail day</div>
+        <div class="day-title">Last Night on a Rim</div>
+        <div class="day-subtitle">Either linger on the Rimrocker or push through to Moab and out onto a canyon rim — Canyonlands Overlook to the south or the arch country to the north — for the final, biggest sky of the trip.</div>
+      </div>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="map-img">
+      <img src="images/day8-map.png" alt="Day 8 — finish Rimrocker into Moab and out to a canyon rim camp">
+      <a class="map-open" href="https://www.google.com/maps/dir/Buckeye+Reservoir/Moab,+UT/38.404384,-109.708790" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
+    </div>
+    <div class="route-strip">
+      <div class="route-stop"><span class="stop-dot start"></span><span class="stop-label start">Rimrocker camp</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">La Sals</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Moab</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏕 Canyon rim camp</span></div>
+    </div>
+
+    <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
+    <div class="feel-box">
+      <span class="energy-badge">🔄 Flexible — Trail or Rest</span>
+      Built-in slack day. If the Rimrocker's been good and you want more, take it slow and savor the western half into the La Sals. If you're ready for showers and a burger, push into Moab, resupply, maybe rinse off, then drive out to a quiet rim for one last night under the desert stars. <strong>Why it's special:</strong> after nine days of mountains and mesas, you end on the edge of Canyonlands' immensity — the perfect last-night campfire (ban permitting) to plan the next trip.
+    </div>
+
+    <div class="weather-box" data-lat="38.404" data-lon="-109.709" data-date="2026-06-28">
+      <div class="weather-header">🌡️ Weather — Jun 28 · Canyon rim near Moab (~5,900 ft)</div>
+      <div class="weather-status" data-w="status">Loading… live forecast</div>
+      <div class="weather-grid">
+        <div class="weather-cell"><span class="w-icon">☀️</span><span class="w-label">High</span><span class="w-val" data-w="high" data-fallback="93°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌙</span><span class="w-label">Low</span><span class="w-val" data-w="low" data-fallback="62°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">💨</span><span class="w-label">Wind</span><span class="w-val" data-w="wind" data-fallback="8–15 mph">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌧️</span><span class="w-label">Rain chance</span><span class="w-val" data-w="precip" data-fallback="~15%">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon" data-w="condicon">☀️</span><span class="w-label">Conditions</span><span class="w-val" data-w="cond" data-fallback="Hot &amp; sunny">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🥵</span><span class="w-label">Midday</span><span class="w-val">Hot — shade &amp; water</span></div>
+        <div class="weather-cell"><span class="w-icon">🌅</span><span class="w-label">Sunrise · Sunset</span><span class="w-val" data-w="sun" data-fallback="6:01 AM · 8:43 PM">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌬️</span><span class="w-label">Rim wind</span><span class="w-val">Exposed at the edge</span></div>
+      </div>
+      <div class="weather-note">⚠️ Full desert heat now — carry <strong>extra water</strong> and do any hiking early. Rim camps are exposed; if it's windy, set up back from the edge behind brush/rock. Flash-flood awareness if a rare storm pops. Likely fire restrictions — <em>check the BLM Moab field office.</em></div>
+    </div>
+
+    <div class="section-header"><h3>🎯 Choose Your Last Camp</h3><div class="section-rule"></div></div>
+    <div class="options-grid">
+      <div class="option-card recommended">
+        <div class="option-label">★ Recommended (north — sets up Day 9)</div>
+        <h4>Arch &amp; Slickrock Country (N of Moab)</h4>
+        <p>Your pin north of Moab toward the Gemini Bridges / arch country — slickrock benches, big views, and it points you straight at the I-70 / SLC drive tomorrow morning.</p>
+        <div class="option-stops"><strong>Camp pin:</strong> 38.710668, -109.729128</div>
+        <div class="option-why">Best logistics for the Day 9 SLC departure — no backtracking south.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=38.710668,-109.729128" target="_blank">North rim pin</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option B (south — grand finale view)</div>
+        <h4>Canyonlands Overlook (Canyon Rims)</h4>
+        <p>Your pin in the Canyon Rims area — a jaw-dropping overlook of the Colorado River and Canyonlands' Needles. Quiet, primitive, vast. ~45–60 min south of Moab.</p>
+        <div class="option-stops"><strong>Camp pin:</strong> 38.404384, -109.708790</div>
+        <div class="option-why">The biggest, most iconic last-night view — worth the southern detour if you're not rushing.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=38.404384,-109.708790" target="_blank">Canyonlands Overlook</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Option C — Comfort</div>
+        <h4>Moab Town Night</h4>
+        <p>If the heat or fatigue wins, grab a Moab campground/motel with a shower and AC, eat a real dinner, and start fresh and clean for the SLC drive.</p>
+        <div class="option-stops"><strong>Base:</strong> Moab (showers, food, fuel)</div>
+        <div class="option-why">Best if you want a clean, easy launch toward home tomorrow.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=38.5733,-109.5498" target="_blank">Moab</a></div>
+      </div>
+    </div>
+    <div class="warning">🗺️ <strong>Heads-up on your two pins:</strong> they're in <em>opposite directions</em> from Moab — the Canyonlands Overlook pin is ~30 mi <strong>south</strong> (Canyon Rims), the arch/slickrock pin is ~10 mi <strong>north</strong>. Pick by mood vs. logistics: the north pin makes Day 9's SLC drive seamless; the south pin is the grander view but adds ~1.5 hrs of backtracking in the morning.</div>
+
+    <div class="section-header"><h3>🥾 Optional Moab-Area Leg-Stretch</h3><div class="section-rule"></div></div>
+    <div class="hikes-grid">
+      <div class="hike-card"><h4>🪨 Corona Arch (if north)</h4>
+        <div class="hike-meta">3.0 mi RT · moderate · slickrock</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">Enormous freestanding arch on a slickrock route — fewer crowds than the NP</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Moderate; go early to beat heat &amp; people</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Cables &amp; a ladder add a fun scramble; walk right under the arch</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★★★</span> Huge arch, do it at dawn</span></div>
+        </div>
+      </div>
+      <div class="hike-card"><h4>🌄 Canyonlands Overlook rim (if south)</h4>
+        <div class="hike-meta">0.5–1 mi · easy · rim edge</div>
+        <div class="hike-stats">
+          <div class="stat-cell"><span class="stat-label">Why Worth It</span><span class="stat-value">Cliff-edge views to the Colorado River, Needles, and Dead Horse Point</span></div>
+          <div class="stat-cell"><span class="stat-label">Crowds</span><span class="stat-value">Very few — it's primitive and far from pavement</span></div>
+          <div class="stat-cell"><span class="stat-label">Unique</span><span class="stat-value">Sunset and sunrise both stun from the same rim</span></div>
+          <div class="stat-cell"><span class="stat-label">Effort vs Reward</span><span class="stat-value"><span class="stars">★★★★★</span> Max view, near-zero effort</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="golden-hour">
+      <div class="golden-hour-header">🌅 Golden Hour</div>
+      <dl>
+        <dt>Where</dt><dd>Right at your rim camp — wherever you land, face the canyon. The last light turns the whole desert copper and the shadows go long across the mesas.</dd>
+        <dt>Why It Matters</dt><dd>The trip's final sunset. Then some of the darkest skies in the U.S. — Moab is near International Dark Sky parks.</dd>
+        <dt>Worth It?</dt><dd>This is the one to slow down for. Dinner on the tailgate, feet hanging over canyon country.</dd>
+      </dl>
+    </div>
+
+    <div class="two-col">
+      <div class="quick-decisions">
+        <div class="quick-decisions-header">⚡ Quick Decisions</div>
+        <div class="decision-row"><span class="decision-icon">🥵</span><span class="decision-trigger">Too hot</span><span class="decision-arrow">→</span><span class="decision-action">Hike at dawn only; siesta in Moab shade midday; camp the rim for the cool evening</span></div>
+        <div class="decision-row"><span class="decision-icon">🚗</span><span class="decision-trigger">Want easy AM drive</span><span class="decision-arrow">→</span><span class="decision-action">Choose the NORTH pin — no southern backtrack toward SLC</span></div>
+        <div class="decision-row"><span class="decision-icon">💨</span><span class="decision-trigger">Windy rim</span><span class="decision-arrow">→</span><span class="decision-action">Set up back from the edge behind rock/brush; stake everything well</span></div>
+        <div class="decision-row"><span class="decision-icon">🔥</span><span class="decision-trigger">Fire ban</span><span class="decision-arrow">→</span><span class="decision-action">No last-night campfire — use a stove; the stars are the show anyway</span></div>
+      </div>
+      <div class="fuel-box">
+        <div class="fuel-header">⛽ Fuel Strategy</div>
+        <ul>
+          <li><strong>Fuel up in Moab</strong> before heading to either rim — and again it's the launch point for tomorrow</li>
+          <li>Load extra water; rim camps have none and it's hot</li>
+          <li>Top off so you can leave straight for SLC without a town stop in the morning</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lc-box">
+      <div class="lc-header">🚙 Land Cruiser Advantage</div>
+      <div class="lc-go"><strong>Push deeper:</strong> Moab's rim roads (Gemini Bridges, Hurrah Pass, Long Canyon) are easy-to-moderate scenic 4WD if you want a last desert play before camp.</div>
+      <div class="lc-avoid"><strong>Avoid:</strong> Committing, exposed obstacle trails (Hell's Revenge, Pritchett) solo on the last night — and any sandy wash if a rare storm threatens flash flooding.</div>
+    </div>
+  </div>
+</div>
+<!-- ════════ DAY 9 ════════ -->
+<div class="day-page" id="day-9">
+  <div class="page-header-bar"><span>🏔 Colorado Overland · Jun 21–29</span><span><strong>FINAL DAY</strong> · Moab → Salt Lake City</span></div>
+  <div class="day-banner">
+    <img src="images/09.jpg" alt="Wasatch Front and Salt Lake City">
+    <div class="day-banner-overlay"></div>
+    <div class="day-banner-content">
+      <div class="day-number">Day 9 of 9 · Home</div>
+      <div class="day-title-block">
+        <div class="day-date">June 29 · Moab → I-70 → US-6 → Salt Lake City · ~3.5 hrs</div>
+        <div class="day-title">The Long Road Home</div>
+        <div class="day-subtitle">One last desert sunrise, then north out of canyon country — through the San Rafael Swell country, over Soldier Summit, and down the Wasatch Front into Salt Lake City. Trip complete.</div>
+      </div>
+    </div>
+  </div>
+  <div class="day-body">
+    <div class="map-img">
+      <img src="images/day9-map.png" alt="Day 9 route — Moab to Salt Lake City">
+      <a class="map-open" href="https://www.google.com/maps/dir/Moab,+UT/Green+River,+UT/Price,+UT/Soldier+Summit/Salt+Lake+City,+UT" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
+    </div>
+    <div class="route-strip">
+      <div class="route-stop"><span class="stop-dot start"></span><span class="stop-label start">Moab</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Green River</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Price (US-6)</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Soldier Summit</span></div><div class="route-line"></div>
+      <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏁 Salt Lake City</span></div>
+    </div>
+
+    <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
+    <div class="feel-box">
+      <span class="energy-badge">🏁 Drive Home</span>
+      Catch the sunrise from the rim, brew coffee on the tailgate, and pack slow. Then it's pavement north: US-191 to I-70 west through the edge of the San Rafael Swell, up US-6 along the Price River and over Soldier Summit, down Spanish Fork Canyon, and onto I-15 with the Wasatch rising ahead. Nine days, four passes over 11,000 ft, dunes to slickrock and back. <strong>Debrief:</strong> hose the mud off the truck, dump the GPS tracks, and start scheming the next one around the fire in your memory.
+    </div>
+
+    <div class="weather-box" data-lat="40.76" data-lon="-111.89" data-date="2026-06-29">
+      <div class="weather-header">🌡️ Weather — Jun 29 · Moab → SLC corridor</div>
+      <div class="weather-status" data-w="status">Loading… live forecast</div>
+      <div class="weather-grid">
+        <div class="weather-cell"><span class="w-icon">☀️</span><span class="w-label">SLC High</span><span class="w-val" data-w="high" data-fallback="92°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌙</span><span class="w-label">Low</span><span class="w-val" data-w="low" data-fallback="66°F">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">💨</span><span class="w-label">Wind</span><span class="w-val" data-w="wind" data-fallback="8–16 mph">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🌧️</span><span class="w-label">Rain chance</span><span class="w-val" data-w="precip" data-fallback="~10%">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon" data-w="condicon">☀️</span><span class="w-label">Conditions</span><span class="w-val" data-w="cond" data-fallback="Sunny &amp; hot">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🛻</span><span class="w-label">US-6 grade</span><span class="w-val">Soldier Summit ~7,477 ft</span></div>
+        <div class="weather-cell"><span class="w-icon">🌅</span><span class="w-label">Sunrise · Sunset</span><span class="w-val" data-w="sun" data-fallback="5:59 AM · 9:03 PM">Loading…</span></div>
+        <div class="weather-cell"><span class="w-icon">🚗</span><span class="w-label">Traffic</span><span class="w-val">Builds near Spanish Fork/Provo</span></div>
+      </div>
+      <div class="weather-note">Hot, dry, easy driving. Leave Moab early to beat the heat and Provo-area afternoon traffic. <strong>US-6</strong> over Soldier Summit is faster and prettier than the long I-70/I-15 loop — watch for trucks and the occasional crosswind in Spanish Fork Canyon.</div>
+    </div>
+
+    <div class="section-header"><h3>🎯 Optional Stops on the Way Home</h3><div class="section-rule"></div></div>
+    <div class="options-grid">
+      <div class="option-card recommended">
+        <div class="option-label">★ Recommended</div>
+        <h4>Sunrise on the Rim, Then Roll</h4>
+        <p>Squeeze every drop out of the last morning — coffee and sunrise over the canyon — then make time north so you're home by mid-afternoon.</p>
+        <div class="option-stops"><strong>Walk:</strong> Final rim sunrise (right from camp)</div>
+        <div class="option-why">The best part of the day is the first hour. Then it's a clean cruise home.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=40.7608,-111.8910" target="_blank">Salt Lake City</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Optional · +45 min</div>
+        <h4>Prehistoric Museum, Price</h4>
+        <p>Right on US-6 in Price — the USU Eastern Prehistoric Museum has a world-class dinosaur collection and is a great leg-stretch / AC break.</p>
+        <div class="option-stops"><strong>Stop:</strong> Museum + lunch in Price</div>
+        <div class="option-why">Fun, cheap, and right on the route — breaks up the drive.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=USU+Eastern+Prehistoric+Museum+Price+UT" target="_blank">Prehistoric Museum</a></div>
+      </div>
+      <div class="option-card">
+        <div class="option-label">Optional · quick</div>
+        <h4>Green River Break</h4>
+        <p>Halfway-ish fuel, snacks, and a river stop. (Famous melons come later in summer, but it's a reliable pit stop now.)</p>
+        <div class="option-stops"><strong>Stop:</strong> Fuel + river overlook</div>
+        <div class="option-why">Logical fuel/food break before the US-6 stretch.</div>
+        <div class="option-links"><a class="map-link" href="https://maps.google.com/?q=Green+River+State+Park+Utah" target="_blank">Green River</a></div>
+      </div>
+    </div>
+
+    <div class="section-header"><h3>🏁 Trip Stats</h3><div class="section-rule"></div></div>
+    <div class="quick-decisions" style="background:var(--stone-pale);border-color:var(--sand);border-left-color:var(--ember);">
+      <div class="decision-row"><span class="decision-icon">📅</span><span class="decision-trigger">Duration</span><span class="decision-arrow">→</span><span class="decision-action">9 days · Jun 21 – 29, 2026</span></div>
+      <div class="decision-row"><span class="decision-icon">🗺️</span><span class="decision-trigger">Distance</span><span class="decision-arrow">→</span><span class="decision-action">~900+ miles · Denver loop through CO &amp; UT to SLC</span></div>
+      <div class="decision-row"><span class="decision-icon">⛰️</span><span class="decision-trigger">High passes</span><span class="decision-arrow">→</span><span class="decision-action">Medano · Stunner · Engineer (12,800') · Cinnamon (12,640') · Red Mountain</span></div>
+      <div class="decision-row"><span class="decision-icon">🏕️</span><span class="decision-trigger">Nights</span><span class="decision-arrow">→</span><span class="decision-action">6 dispersed/backcountry · 2 hotels (Durango, Ouray) · flexible Day 8</span></div>
+      <div class="decision-row"><span class="decision-icon">🥾</span><span class="decision-trigger">Marquee hike</span><span class="decision-arrow">→</span><span class="decision-action">Handies Peak 14,058' via American Basin wildflowers</span></div>
+      <div class="decision-row"><span class="decision-icon">🏜️</span><span class="decision-trigger">Range</span><span class="decision-arrow">→</span><span class="decision-action">Sand dunes → alpine tundra → red-rock canyon — all of it</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ REFERENCE / APPENDIX ════════ -->
+<div class="ref-page" id="reference">
+  <h2>Reference &amp; Appendix</h2>
+  <p style="font-size:9pt;color:var(--stone);font-style:italic;margin-bottom:4px;">Everything in one place for around the campfire: key coordinates, GPX downloads, road/ranger phone numbers, and where the photos come from.</p>
+
+  <div class="ref-section">
+    <h3>📍 Key Coordinates (cross-checked)</h3>
+    <p style="font-size:8pt;color:var(--stone);margin-bottom:6px;">Camp &amp; trailhead pins below were checked against Google Maps + the resolved drop-pins / forum &amp; agency sources noted in each day. <strong>Always re-verify against OnX/Gaia in the field</strong> — dispersed spots shift and some are approximate (marked “~ scout”).</p>
+    <table class="poi-table">
+      <thead><tr><th>Day</th><th>Place</th><th>Lat, Lon</th><th>Type · Verify with</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Medano Pass Primitive Rd camp (your pin)</td><td>37.82401, -105.45907</td><td>Camp · Google + NPS + your pin</td></tr>
+        <tr><td>1</td><td>Great Sand Dunes Visitor Center</td><td>37.7339, -105.5117</td><td>Stop · NPS</td></tr>
+        <tr><td>1</td><td>Zapata Falls Trailhead</td><td>37.6233, -105.5503</td><td>Hike · AllTrails + Google</td></tr>
+        <tr><td>2</td><td>Horca / FSR 250 (your pin)</td><td>37.13094, -106.34928</td><td>Waypoint · your pin</td></tr>
+        <tr><td>2</td><td>Platoro</td><td>37.348, -106.531</td><td>Town/fuel? · Google</td></tr>
+        <tr><td>2</td><td>Stunner Campground area</td><td>~37.398, -106.585</td><td>Camp · FS + scout</td></tr>
+        <tr><td>3</td><td>Treasure Falls TH</td><td>37.4708, -106.8503</td><td>Hike · AllTrails</td></tr>
+        <tr><td>3</td><td>Hampton Inn, Durango</td><td>3777 Main Ave</td><td>Hotel · res #93580647</td></tr>
+        <tr><td>4</td><td>Molas Lake</td><td>37.7479, -107.6896</td><td>Stop · Google</td></tr>
+        <tr><td>4</td><td>Animas Forks ghost town</td><td>37.9289, -107.5722</td><td>Stop · Google + BLM</td></tr>
+        <tr><td>4</td><td>South Mineral Creek dispersed</td><td>37.8089, -107.7717</td><td>Camp · FS + Dyrt</td></tr>
+        <tr><td>5</td><td>American Basin Trailhead</td><td>37.9258, -107.5044</td><td>Hike · AllTrails + COTREX</td></tr>
+        <tr><td>5</td><td>Handies Peak summit</td><td>37.9131, -107.5042</td><td>Summit · USGS</td></tr>
+        <tr><td>6</td><td>Red Mountain Pass</td><td>37.8969, -107.7114</td><td>Stop · CDOT</td></tr>
+        <tr><td>6</td><td>Box Cañon Falls, Ouray</td><td>38.0206, -107.6745</td><td>Hike · Google</td></tr>
+        <tr><td>6</td><td>Quality Inn, Ouray</td><td>191 5th Ave</td><td>Hotel · res #38245206</td></tr>
+        <tr><td>7</td><td>Montrose (resupply)</td><td>38.4783, -107.8762</td><td>Town · Google</td></tr>
+        <tr><td>7</td><td>Paradox Valley Overlook</td><td>~38.33, -108.88</td><td>Camp · forums + scout</td></tr>
+        <tr><td>8</td><td>Canyonlands Overlook (your pin)</td><td>38.404384, -109.708790</td><td>Camp · your pin + BLM</td></tr>
+        <tr><td>8</td><td>Arch/slickrock camp (your pin)</td><td>38.710668, -109.729128</td><td>Camp · your pin</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🗺️ GPX Downloads (OnX · Gaia · Google)</h3>
+    <p style="font-size:8pt;color:var(--stone);margin-bottom:6px;">Files live in the <strong>/gpx files</strong> folder. Import into OnX Offroad or Gaia GPS before you leave cell coverage. Each opens in Google Maps via the day's “Open in Google Maps” button too.</p>
+    <table class="gpx-table">
+      <thead><tr><th>File</th><th>Covers</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>01_Medano_Pass_Road.gpx</td><td>Dunes → Medano Pass sites</td><td>Sand + creek crossings; air down</td></tr>
+        <tr><td>02_Conejos_ParkCreek.gpx</td><td>Horca → FSR 250 → Stunner → Park Creek Rd</td><td>High passes; no signal</td></tr>
+        <tr><td>04_Alpine_Loop_clockwise.gpx</td><td>Silverton → Engineer → Lake City → Cinnamon</td><td>12k passes; clockwise</td></tr>
+        <tr><td>07_Rimrocker_Trail.gpx</td><td>Montrose → Paradox → Moab</td><td>160 mi; carry fuel/water</td></tr>
+        <tr><td>00_Full_Trip_Overview.gpx</td><td>All 9 days, waypoints</td><td>Big-picture overview track</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>📞 Road Conditions &amp; Ranger Contacts</h3>
+    <table class="poi-table">
+      <thead><tr><th>Agency</th><th>For</th><th>Phone</th></tr></thead>
+      <tbody>
+        <tr><td>Great Sand Dunes NP</td><td>Medano Pass Rd / creek conditions</td><td>(719) 378-6395</td></tr>
+        <tr><td>Rio Grande NF — Conejos Peak RD</td><td>FSR 250/380, Stunner, Platoro</td><td>(719) 274-8971</td></tr>
+        <tr><td>San Juan NF / BLM Tres Rios</td><td>Durango / Silverton backcountry</td><td>(970) 247-4874</td></tr>
+        <tr><td>BLM Gunnison FO</td><td>Alpine Loop / Lake City side</td><td>(970) 642-4940</td></tr>
+        <tr><td>GMUG — Ouray RD (Montrose)</td><td>Ouray / Rimrocker east</td><td>(970) 240-5300</td></tr>
+        <tr><td>BLM Moab FO</td><td>Moab rim camps / fire bans</td><td>(435) 259-2100</td></tr>
+        <tr><td>CDOT / Colorado 511 · cotrip.org</td><td>Pass &amp; highway status</td><td>511 (in CO)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ref-section">
+    <h3>🔧 Land Cruiser / Trip Notes</h3>
+    <ul class="lc-notes">
+      <li>Air-down kit + compressor — you'll use it on Medano sand, the Alpine Loop, and the Rimrocker.</li>
+      <li>Carry spare fuel + 2 days of water before the Alpine Loop and the Rimrocker — services are sparse.</li>
+      <li>Winter-rated sleeping bags: three nights sleep above ~10,000 ft and can hit freezing in late June.</li>
+      <li>Rain jacket, gloves, hat for Handies — summit is 15–25°F colder than camp, off the top by noon.</li>
+      <li>Download offline OnX/Gaia maps for the whole route in Durango (Day 3) while on wifi.</li>
+      <li>Check fire bans (BLM Moab, Rio Grande NF, San Juan NF) — common by late June.</li>
+    </ul>
+  </div>
+
+  <div class="ref-section">
+    <h3>🖼️ Photos — How to Populate the Guide</h3>
+    <p style="font-size:8.5pt;color:var(--ink);line-height:1.6;">
+      The guide expects images named <strong>images/00.jpg</strong> (cover), <strong>images/01.jpg … 09.jpg</strong> (day banners), and <strong>images/day1-map.png … day9-map.png</strong> (route maps). Until they exist, each shows a labeled placeholder.
+      <br><br>
+      • Run <strong>python3 download_images.py</strong> to auto-fetch free, public-domain landmark photos from Wikimedia Commons into <strong>/images</strong>.
+      <br>
+      • Or drop your own photos into <strong>/images</strong> with those exact names.
+      <br>
+      • <strong>IMAGES.md</strong> lists every photo slot with 2–3 source links (Wikimedia, NPS, BLM, Forest Service) you can scrape from — all free to use.
+      <br>
+      • For route maps, screenshot each day's Google Maps directions (or OnX) and save as <strong>dayN-map.png</strong>.
+    </p>
+  </div>
+
+  <div class="warning" style="margin-top:14px;">
+    ⚠️ <strong>Plan, don't gospel.</strong> Dispersed sites, road status, and weather change fast in the San Juans and the desert. Verify camps and creek/pass conditions in OnX/Gaia and with the ranger numbers above the day before. Build in flex — Day 8 is your buffer.
+  </div>
+</div>
+
+</div><!-- /book -->
+<script>
+/* ── LIVE WEATHER (Open-Meteo, no key) ───────────────────────────── */
+const WMO={0:['☀️','Clear'],1:['🌤️','Mainly clear'],2:['⛅','Partly cloudy'],3:['☁️','Overcast'],45:['🌫️','Fog'],48:['🌫️','Rime fog'],51:['🌦️','Lt drizzle'],53:['🌦️','Drizzle'],55:['🌦️','Dense drizzle'],61:['🌧️','Lt rain'],63:['🌧️','Rain'],65:['🌧️','Heavy rain'],71:['🌨️','Lt snow'],73:['🌨️','Snow'],75:['🌨️','Heavy snow'],77:['🌨️','Snow grains'],80:['🌦️','Rain showers'],81:['🌧️','Showers'],82:['⛈️','Violent showers'],85:['🌨️','Snow showers'],86:['🌨️','Snow showers'],95:['⛈️','Thunderstorm'],96:['⛈️','T-storm hail'],99:['⛈️','Severe storm']};
+function fmtTime(iso){if(!iso)return'—';const d=new Date(iso);let h=d.getHours(),m=d.getMinutes();const ap=h>=12?'PM':'AM';h=h%12||12;return h+':'+String(m).padStart(2,'0')+' '+ap;}
+async function loadWeather(box){
+  const {lat,lon,date}=box.dataset;
+  const url=`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max,wind_gusts_10m_max,sunrise,sunset&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=America%2FDenver&start_date=${date}&end_date=${date}`;
+  const set=(k,v)=>{const el=box.querySelector(`[data-w="${k}"]`);if(el)el.textContent=v;};
+  try{
+    const r=await fetch(url);const j=await r.json();const d=j.daily;
+    if(!d||!d.time||!d.time.length)throw new Error('no data');
+    const wc=WMO[d.weather_code[0]]||['🌡️','—'];
+    set('high',Math.round(d.temperature_2m_max[0])+'°F');
+    set('low',Math.round(d.temperature_2m_min[0])+'°F');
+    set('wind',Math.round(d.wind_speed_10m_max[0])+' mph · gust '+Math.round(d.wind_gusts_10m_max[0]));
+    set('precip',(d.precipitation_probability_max[0]??0)+'%');
+    set('cond',wc[1]);
+    set('condicon',wc[0]);
+    set('sun',fmtTime(d.sunrise[0])+' · '+fmtTime(d.sunset[0]));
+    const st=box.querySelector('[data-w="status"]');if(st)st.textContent='● LIVE forecast — updated '+new Date().toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+  }catch(e){
+    const st=box.querySelector('[data-w="status"]');if(st){st.style.color='#E6A23C';st.textContent='⚠ Live forecast unavailable (trip >16 days out or offline) — showing late-June seasonal norms';}
+    box.querySelectorAll('[data-w]').forEach(el=>{const f=el.dataset.fallback;if(f&&(el.textContent==='Loading…'||el.textContent==='—'))el.textContent=f;});
+  }
+}
+document.querySelectorAll('.weather-box[data-lat]').forEach(loadWeather);
+/* ── IMAGE PLACEHOLDERS (until photos are added to /images) ──────── */
+document.querySelectorAll('img').forEach(img=>{
+  img.addEventListener('error',function(){
+    if(this.dataset.phDone)return;this.dataset.phDone=1;
+    const ph=document.createElement('div');ph.className='img-ph';
+    ph.textContent='📷 '+(this.alt||'add photo to /images');
+    if(this.parentElement)this.parentElement.replaceChild(ph,this);
+  });
+});
+</script>
+</body>
+</html>

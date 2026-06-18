@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Colorado Overland Guide" xmlns="http://www.topografix.com/GPX/1/1">
+  <wpt lat="38.5733" lon="-109.5498">
+    <name>Moab</name>
+    <desc>Resupply / fuel</desc>
+  </wpt>
+  <wpt lat="38.404384" lon="-109.70879">
+    <name>Canyonlands Overlook (pin)</name>
+    <desc>South rim camp - grand view</desc>
+  </wpt>
+  <wpt lat="38.710668" lon="-109.729128">
+    <name>Arch/slickrock camp (pin)</name>
+    <desc>North rim camp - best for SLC AM</desc>
+  </wpt>
+</gpx>

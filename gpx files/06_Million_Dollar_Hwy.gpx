@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Colorado Overland Guide" xmlns="http://www.topografix.com/GPX/1/1">
+  <wpt lat="37.8119" lon="-107.6645">
+    <name>Silverton</name>
+    <desc>Start north on US-550</desc>
+  </wpt>
+  <wpt lat="37.8969" lon="-107.7114">
+    <name>Red Mountain Pass</name>
+    <desc>11,018 ft - mining ruins</desc>
+  </wpt>
+  <wpt lat="37.9889" lon="-107.6603">
+    <name>Bear Creek Falls overlook</name>
+    <desc>Roadside 227-ft falls</desc>
+  </wpt>
+  <wpt lat="38.0228" lon="-107.6712">
+    <name>Ouray</name>
+    <desc>Quality Inn / hot springs</desc>
+  </wpt>
+  <wpt lat="38.0206" lon="-107.6745">
+    <name>Box Canon Falls</name>
+    <desc>285-ft slot falls</desc>
+  </wpt>
+  <trk>
+    <name>Million Dollar Highway Silverton to Ouray</name>
+    <trkseg>
+      <trkpt lat="37.8119" lon="-107.6645"></trkpt>
+      <trkpt lat="37.8969" lon="-107.7114"></trkpt>
+      <trkpt lat="37.9889" lon="-107.6603"></trkpt>
+      <trkpt lat="38.0228" lon="-107.6712"></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

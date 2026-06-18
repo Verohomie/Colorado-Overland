@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local-only deploy scripts
+*_push.sh
+
+# Code reviews
+code_review_*.html

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Colorado Overland Guide" xmlns="http://www.topografix.com/GPX/1/1">
+  <wpt lat="39.7392" lon="-104.9903">
+    <name>Denver START</name>
+    <desc>Day 1 depart</desc>
+  </wpt>
+  <wpt lat="37.82401" lon="-105.45907">
+    <name>Medano Pass camp</name>
+    <desc>Night 1</desc>
+  </wpt>
+  <wpt lat="37.398" lon="-106.585">
+    <name>Stunner / Park Creek</name>
+    <desc>Night 2</desc>
+  </wpt>
+  <wpt lat="37.2987" lon="-107.8723">
+    <name>Durango (Hampton)</name>
+    <desc>Night 3</desc>
+  </wpt>
+  <wpt lat="37.95" lon="-107.56">
+    <name>Alpine Loop camp</name>
+    <desc>Nights 4-5</desc>
+  </wpt>
+  <wpt lat="38.0228" lon="-107.6712">
+    <name>Ouray (Quality Inn)</name>
+    <desc>Night 6</desc>
+  </wpt>
+  <wpt lat="38.33" lon="-108.88">
+    <name>Paradox rim</name>
+    <desc>Night 7</desc>
+  </wpt>
+  <wpt lat="38.404384" lon="-109.70879">
+    <name>Moab rim camp</name>
+    <desc>Night 8</desc>
+  </wpt>
+  <wpt lat="40.7608" lon="-111.891">
+    <name>Salt Lake City FINISH</name>
+    <desc>Day 9 home</desc>
+  </wpt>
+  <trk>
+    <name>Colorado Overland - full route</name>
+    <trkseg>
+      <trkpt lat="39.7392" lon="-104.9903"></trkpt>
+      <trkpt lat="37.82401" lon="-105.45907"></trkpt>
+      <trkpt lat="37.13094" lon="-106.34928"></trkpt>
+      <trkpt lat="37.398" lon="-106.585"></trkpt>
+      <trkpt lat="37.2987" lon="-107.8723"></trkpt>
+      <trkpt lat="37.8119" lon="-107.6645"></trkpt>
+      <trkpt lat="37.9289" lon="-107.5722"></trkpt>
+      <trkpt lat="38.0228" lon="-107.6712"></trkpt>
+      <trkpt lat="38.4783" lon="-107.8762"></trkpt>
+      <trkpt lat="38.33" lon="-108.88"></trkpt>
+      <trkpt lat="38.5733" lon="-109.5498"></trkpt>
+      <trkpt lat="38.404384" lon="-109.70879"></trkpt>
+      <trkpt lat="40.7608" lon="-111.891"></trkpt>
+    </trkseg>
+  </trk>
+</gpx>
