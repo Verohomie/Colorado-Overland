@@ -89,8 +89,9 @@ write("04_Alpine_Loop_clockwise.gpx",
      (37.9131, -107.5042, "Handies Peak", "14,058 ft summit"),
      (37.8061, -107.7742, "South Mineral dispersed", "Sheltered camp option")],
     "Alpine Loop clockwise",
+    # Silverton -> Animas Forks -> Engineer -> Lake City -> American Basin -> Cinnamon -> Animas Forks
     [(37.8119, -107.6645), (37.9311, -107.5715), (37.9756, -107.5845),
-     (38.0303, -107.3151), (37.9339, -107.5378), (37.9203, -107.5164),
+     (38.0303, -107.3151), (37.9203, -107.5164), (37.9339, -107.5378),
      (37.9311, -107.5715)])
 
 # ── Day 6: Million Dollar Hwy (Silverton -> Ouray) ──────────────────
