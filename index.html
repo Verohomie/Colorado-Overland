@@ -94,12 +94,6 @@ a{color:var(--sky);}
 .weather-note strong{color:#FF8C60;}
 
 /* GPX */
-.gpx-box{background:var(--night);padding:10px 14px;margin:8px 0;display:flex;align-items:center;gap:12px;}
-.gpx-icon{font-size:18pt;flex-shrink:0;}
-.gpx-label{font-family:var(--font-mono);font-size:7pt;text-transform:uppercase;letter-spacing:.15em;color:var(--sand-dark);display:block;margin-bottom:2px;}
-.gpx-name{font-family:var(--font-mono);font-size:9pt;color:var(--ember);font-weight:600;}
-.gpx-name a{color:var(--ember);text-decoration:none;}
-.gpx-note{font-size:8pt;color:rgba(232,213,183,.6);font-style:italic;margin-top:2px;}
 
 /* ROUTE STRIP */
 .route-strip{background:var(--night);padding:10px 16px;display:flex;align-items:center;overflow-x:auto;margin:0 0 4px;}
@@ -208,10 +202,11 @@ a{color:var(--sky);}
 .ref-page{padding:var(--margin);}
 .ref-page h2{font-family:var(--font-display);font-size:24pt;color:var(--rust);margin-bottom:6px;}
 .ref-section h3{font-family:var(--font-display);font-size:12pt;color:var(--rust);border-bottom:1px solid var(--sand);padding-bottom:4px;margin:16px 0 8px;}
-.gpx-table,.poi-table{width:100%;border-collapse:collapse;font-size:8.5pt;margin:8px 0;}
-.gpx-table th,.poi-table th{background:var(--pine);color:#fff;font-family:var(--font-mono);font-size:7.5pt;padding:6px 10px;text-align:left;}
-.gpx-table td,.poi-table td{padding:6px 10px;border-bottom:1px solid var(--sand);vertical-align:top;line-height:1.5;}
-.gpx-table tr:nth-child(even) td,.poi-table tr:nth-child(even) td{background:var(--sage-pale);}
+
+.poi-table{width:100%;border-collapse:collapse;font-size:8.5pt;margin:8px 0;}
+.poi-table th{background:var(--pine);color:#fff;font-family:var(--font-mono);font-size:7.5pt;padding:6px 10px;text-align:left;}
+.poi-table td{padding:6px 10px;border-bottom:1px solid var(--sand);vertical-align:top;line-height:1.5;}
+.poi-table tr:nth-child(even) td{background:var(--sage-pale);}
 .poi-table td:first-child{font-family:var(--font-mono);font-size:8pt;color:var(--pine);white-space:nowrap;}
 .lc-notes{list-style:none;}
 .lc-notes li{font-size:8.5pt;padding:4px 0 4px 20px;position:relative;border-bottom:1px dotted var(--sand);line-height:1.5;}
@@ -254,7 +249,7 @@ a{color:var(--sky);}
     </table>
     <div class="cover-note">
       Each evening section gives you <strong>3 curated day options</strong>, hike details, decision-ready camp alternatives, golden-hour picks, and quick-decision pivots for wind &amp; weather.
-      <br>GPX files for OnX Offroad, Gaia GPS &amp; Google Maps live in the <strong>/gpx files</strong> folder · Live weather loads at the top of every day.
+      <br>Navigate with <strong>OnX Offroad, TrailsOffroad &amp; Gaia</strong> (search each trail by name) · Live weather loads at the top of every day.
     </div>
   </div>
 </div>
@@ -307,12 +302,6 @@ a{color:var(--sky);}
       </div>
       <div class="weather-note">⚠️ Afternoon <strong>thunderstorms</strong> build fast over the Sangres in late June — be off exposed ridges by 1 PM. Creek crossings on Medano Pass Rd run <em>highest in late June</em> from snowmelt (usually still passable for a Land Cruiser; scout if it looks deep). Evening winds funnel down the valley — see camp notes for the sheltered picks.</div>
     </div>
-
-    <div class="gpx-box"><span class="gpx-icon">🗺️</span><div>
-      <span class="gpx-label">GPX Track</span>
-      <span class="gpx-name"><a href="https://www.google.com/maps/dir/Great+Sand+Dunes+National+Park+Visitor+Center/37.82401,-105.45907" target="_blank">01_Medano_Pass_Road.gpx → Open route in Maps</a></span>
-      <div class="gpx-note">Load into OnX Offroad / Gaia before you lose signal. Waypoints: airdown pullout, creek crossings, numbered sites, Medano Pass.</div>
-    </div></div>
 
     <div class="section-header"><h3>🎯 Choose Your Afternoon (arrive ~2–3 PM)</h3><div class="section-rule"></div></div>
     <div class="options-grid">
@@ -476,12 +465,6 @@ a{color:var(--sky);}
       </div>
       <div class="weather-note">⚠️ You're sleeping at <strong>~10,000 ft</strong> — pack a real sleeping bag; nights can flirt with freezing even in late June. Afternoon <em>thunderstorms</em> are near-daily over the Conejos high country; the dirt of FSR 250/380 gets slick when wet. Aim to be set up before the typical 2–4 PM cells.</div>
     </div>
-
-    <div class="gpx-box"><span class="gpx-icon">🗺️</span><div>
-      <span class="gpx-label">GPX Track</span>
-      <span class="gpx-name"><a href="https://www.trailsoffroad.com/US/colorado/trails/8613-park-creek-road" target="_blank">02_Conejos_ParkCreek.gpx → Trail page (TrailsOffroad #8613)</a></span>
-      <div class="gpx-note">FSR 250 up the Conejos to Platoro Reservoir tonight; Park Creek Rd (FSR 380) over Elwood Pass is Day 3. Load to OnX/Gaia — no cell signal past Antonito.</div>
-    </div></div>
 
     <div class="section-header"><h3>🎯 Choose Your Morning at the Dunes</h3><div class="section-rule"></div></div>
     <div class="options-grid">
@@ -786,12 +769,6 @@ a{color:var(--sky);}
       </div>
       <div class="weather-note">⚠️ <strong>You're camping above 11,000 ft.</strong> Nights drop below freezing in late June — bring winter bags. Afternoon <em>thunderstorms with lightning</em> are near-certain over Engineer/Cinnamon — <strong>cross the high passes before noon</strong> and be at camp early. Snowbanks can linger on north-facing pass approaches into late June.</div>
     </div>
-
-    <div class="gpx-box"><span class="gpx-icon">🗺️</span><div>
-      <span class="gpx-label">GPX Track</span>
-      <span class="gpx-name"><a href="https://www.google.com/maps/dir/Silverton,+CO/Animas+Forks,+CO/Engineer+Pass/Lake+City,+CO/Cinnamon+Pass/Animas+Forks,+CO" target="_blank">04_Alpine_Loop_clockwise.gpx → Open loop in Maps</a></span>
-      <div class="gpx-note">Full clockwise loop: Silverton → Animas Forks → Engineer Pass → Lake City → Cinnamon Pass → back. Load OnX/Gaia — no signal up here.</div>
-    </div></div>
 
     <div class="section-header"><h3>🎯 Choose Your Day</h3><div class="section-rule"></div></div>
     <div class="options-grid">
@@ -1284,12 +1261,6 @@ a{color:var(--sky);}
       <div class="weather-note">Drier, hotter, and lower than the mountains — proper canyon country. The Paradox rim is gorgeous but <strong>exposed to wind</strong>; if it's blowing, drop to the timber/Buckeye. Late-June fire restrictions are common on BLM — <em>verify before any fire.</em></div>
     </div>
 
-    <div class="gpx-box"><span class="gpx-icon">🗺️</span><div>
-      <span class="gpx-label">GPX Track</span>
-      <span class="gpx-name"><a href="https://www.onxmaps.com/offroad/trails/us/colorado/rim-rocker" target="_blank">07_Rimrocker_Trail.gpx → Rimrocker on OnX Offroad</a></span>
-      <div class="gpx-note">160-mi Montrose→Moab OHV route. Download the full track to OnX/Gaia — long no-signal stretches. Well-signed but junctions are easy to miss.</div>
-    </div></div>
-
     <div class="section-header"><h3>🎯 Choose Your Day</h3><div class="section-rule"></div></div>
     <div class="options-grid">
       <div class="option-card recommended">
@@ -1660,23 +1631,6 @@ a{color:var(--sky);}
     </table>
   </div>
 
-  <div class="ref-section">
-    <h3>🗺️ GPX Downloads (OnX · Gaia · Google)</h3>
-    <p style="font-size:8pt;color:var(--stone);margin-bottom:6px;">Files live in the <strong>/gpx files</strong> folder. Import into OnX Offroad or Gaia GPS before you leave cell coverage. Each opens in Google Maps via the day's “Open in Google Maps” button too.</p>
-    <table class="gpx-table">
-      <thead><tr><th>File</th><th>Covers</th><th>Notes</th></tr></thead>
-      <tbody>
-        <tr><td>01_Medano_Pass_Road.gpx</td><td>Dunes → Medano Pass sites</td><td>Sand + creek crossings; air down</td></tr>
-        <tr><td>02_Conejos_ParkCreek.gpx</td><td>Horca → FSR 250 → Platoro Reservoir</td><td>Day 2; no signal past Antonito</td></tr>
-        <tr><td>03_Park_Creek_Rd.gpx</td><td>Stunner → Elwood Pass → Hwy 160</td><td>Day 3; coords approx — verify in OnX</td></tr>
-        <tr><td>04_Alpine_Loop_clockwise.gpx</td><td>Silverton → Engineer → Lake City → Cinnamon</td><td>12k passes; clockwise</td></tr>
-        <tr><td>06_Million_Dollar_Hwy.gpx</td><td>Silverton → Red Mtn Pass → Ouray</td><td>Day 6; paved, no guardrails</td></tr>
-        <tr><td>07_Rimrocker_Trail.gpx</td><td>Montrose → Paradox → Moab (160 mi)</td><td>Tabeguache crossing; carry fuel/water</td></tr>
-        <tr><td>08_Moab_Rim_Camps.gpx</td><td>Moab → your two rim-camp pins</td><td>N pin = easy Day 9 start</td></tr>
-        <tr><td>00_Full_Trip_Overview.gpx</td><td>All 9 days, waypoints</td><td>Big-picture overview track</td></tr>
-      </tbody>
-    </table>
-  </div>
 
   <div class="ref-section">
     <h3>📞 Road Conditions &amp; Ranger Contacts</h3>

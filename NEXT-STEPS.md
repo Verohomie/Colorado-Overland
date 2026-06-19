@@ -1,9 +1,15 @@
 # Colorado Overland — Handoff / Resume Notes
 
-_Updated 2026-06-18 (session 4). Everything below is DONE + pushed to GitHub (main).
+_Updated 2026-06-19 (session 5). Everything below is DONE + pushed to GitHub (main).
 Waypoint reference data retained for future tweaks._
 
 ## CURRENT STATE (resume here)
+- ✅ **GPX REMOVED by request (2026-06-19)** — deleted `gpx files/` + `make_gpx.py`, the per-day
+  GPX boxes, the downloads table, and CSS. Brad navigates with OnX/TrailsOffroad/Gaia directly.
+  **Do NOT re-add GPX** unless asked. (Day pages still have "Open in Google Maps" route buttons.)
+- ✅ Mining-history boxes added (Days 4–6: Animas Forks, Engineer/Henson/Ute-Ulay, Red Mountain)
+  with "photos to grab" links; fixed Animas Forks landmark Walsh→Duncan House.
+- ✅ Day 5 Alpine Loop sub-routing fixed to true clockwise (Engineer→Lake City→American Basin).
 - ✅ Days 3/7/8 enriched from TrailsOffroad PDFs (Park Creek/Elwood Pass + Rimrocker).
 - ✅ Pushed to GitHub `Verohomie/Colorado-Overland` (main). NOT on GitHub Pages yet (offered).
 - ✅ **Lat/long audit done** — 19 pins corrected vs TopoZone/NPS/14ers/recreation.gov.
@@ -15,8 +21,7 @@ Waypoint reference data retained for future tweaks._
 ## STILL OPEN / NEXT
 - Route-map screenshots still needed: day1, day4, day5, day6, day7, day8, day9 `-map.png`
   (Brad screenshots Google Maps/OnX; placeholders show until then). Tracked in IMAGES.md.
-- Flagged dispersed pins in `VERIFY-PINS.md` need Brad's visual confirm OR exact GPX export
-  from his OnX/TrailsOffroad accounts (drop into `gpx files/`, then I swap approximate tracks).
+- Flagged dispersed pins in `VERIFY-PINS.md` need Brad's visual confirm (he'll set them in OnX/Gaia).
 - Offer still open: enable GitHub Pages (`gh`) to make it live.
 - Tidy (optional): `download_images.py` has dead `search_first_file()` (lines 34–54), unused.
 - Reminder given to Brad: rotate OnX/TrailsOffroad passwords (were pasted in chat; never stored).

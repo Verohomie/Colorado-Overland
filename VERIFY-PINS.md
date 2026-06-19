@@ -5,7 +5,10 @@ NPS, recreation.gov, 14ers.com, TheDyrt, TrailsOffroad). Below: what was **corre
 (2+ source agreement) and what still **needs your eyes** (couldn't get 2 clean matches —
 mostly dispersed campsites with no published coordinate).
 
-## ✅ Corrected (2+ source agreement) — applied to index.html + GPX
+_Note: GPX files were removed from the project 2026-06-19 (navigation is via OnX/TrailsOffroad/Gaia).
+Coordinates below live in index.html map/camp links only._
+
+## ✅ Corrected (2+ source agreement) — applied to index.html
 
 | Place | Was (wrong) | Now (verified) | Off by | Sources |
 |-------|-------------|----------------|--------|---------|
@@ -44,9 +47,9 @@ links open my best estimate in Google Maps — eyeball the satellite view and ad
 - **Day 5 — American Basin camp:** https://maps.google.com/?q=37.9203,-107.5164 — set to the trailhead; camping is in pullouts just below, fragile tundra.
 - **Day 5 — Burrows Park / Grassy Gulch camp:** https://maps.google.com/?q=37.940,-107.420 — approximate; CR-30 dispersed toward Lake City.
 - **Day 7 — Rimrocker "Epic Campsite" (mi 98.6, Paradox rim):** https://maps.google.com/?q=38.33,-108.88 — TrailsOffroad lists it by mile only; confirm on your OnX track.
-- **Day 7 — Dry Creek Rec Area (Rimrocker mi 0) in GPX:** https://maps.google.com/?q=38.47,-107.95 — approximate; verify the BLM Dry Creek lot.
-- **Day 6 — Bear Creek Falls overlook (GPX):** https://maps.google.com/?q=37.9889,-107.6603 — only 1 source; it's the US-550 bridge pullout ~2.9 mi S of Ouray.
-- **Day 3 — Park Creek Rd waypoints (Elwood Pass/Cabin/Alpine camps):** approximate in `03_Park_Creek_Rd.gpx` — best source is the exact TrailsOffroad #380 GPX from your account.
+- **Day 7 — Dry Creek Rec Area (Rimrocker mi 0):** Day 7 links to it by name; confirm the BLM Dry Creek lot in OnX.
+- **Day 6 — Bear Creek Falls overlook:** US-550 bridge pullout ~2.9 mi S of Ouray (single source) — confirm in OnX/Gaia.
+- **Day 3 — Park Creek Rd waypoints (Elwood Pass/Cabin/Alpine camps):** see the `day3-trail.png` map; the exact TrailsOffroad #380 trail in your app is the source of truth.
 - **Your 4 dropped pins** (Medano camp 37.82401,-105.45907 · Horca 37.13094,-106.34928 · Canyonlands Overlook 38.404384,-109.708790 · Arch 38.710668,-109.729128) — taken straight from your Google Maps drops; kept as-is.
 
 ## Note on the Great Sand Dunes cluster

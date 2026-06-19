@@ -13,8 +13,6 @@ Hosting target: GitHub Pages or Render (static site).
   HTML/CSS/JS, no build step, no dependencies. Open it directly in a browser.
 - **images/** — `00.jpg` (cover), `01–09.jpg` (day banners), `dayN-map.png` (route maps).
   Missing images render as labeled placeholders (no broken icons).
-- **gpx files/** — GPX tracks/waypoints for OnX Offroad, Gaia GPS, Google Maps.
-- **make_gpx.py** — regenerates the GPX files from waypoint definitions.
 - **download_images.py** — fetches free landmark photos from Wikimedia Commons.
 - **IMAGES.md** — every image slot + free source links to scrape.
 
@@ -31,7 +29,7 @@ Hosting target: GitHub Pages or Render (static site).
   `.day-banner`, `.feel-box`, `.options-grid`, `.hikes-grid`, `.camp-grid`,
   `.golden-hour`, `.quick-decisions`, `.fuel-box`, `.lc-box`, `.weather-box`.
 - **Each day page** follows Brad's locked spec: What Today Feels Like → live
-  Weather → GPX → 3–4 “Choose Your Day” options → Short Hikes → decision-ready
+  Weather → 3–4 “Choose Your Day” options → Short Hikes → decision-ready
   Camp grid (Best View / Wind-Protected / Easy Backup) → Golden Hour → Quick
   Decisions + Fuel → Land Cruiser Advantage. Every element links to Google Maps.
 
@@ -52,9 +50,10 @@ Hosting target: GitHub Pages or Render (static site).
   Rimrocker). Day 3 is now the Park Creek trail day over **Elwood Pass (11,631 ft,
   not Stunner Pass)**; Day 7/8 use real Rimrocker waypoints (Dry Creek TH, Iron
   Springs/Columbine CGs, Naturita fuel, Tabeguache crossing, Uravan, "Epic Campsite"
-  mi 98.6, Buckeye designated-only, rough WP59–63, Black Ridge). Mid-route coords in
-  `03_Park_Creek_Rd.gpx` and `07_Rimrocker_Trail.gpx` are **approximate** — Brad can
-  export exact GPX from his OnX/TrailsOffroad accounts and drop into `gpx files/`.
+  mi 98.6, Buckeye designated-only, rough WP59–63, Black Ridge).
+- **No GPX in this project** (removed by request 2026-06-19). Brad navigates with OnX
+  Offroad, TrailsOffroad &amp; Gaia directly (search trails by name). Don't re-add GPX
+  files / a generator / a downloads table unless asked.
 - **Photos**: run `download_images.py` or hand-place per IMAGES.md.
 - **Route maps**: screenshot Google Maps/OnX per day → `images/dayN-map.png`.
 
