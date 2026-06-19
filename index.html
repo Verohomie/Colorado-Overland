@@ -93,8 +93,6 @@ a{color:var(--sky);}
 .weather-note em{color:#F0C060;font-style:normal;font-weight:bold;}
 .weather-note strong{color:#FF8C60;}
 
-/* GPX */
-
 /* ROUTE STRIP */
 .route-strip{background:var(--night);padding:10px 16px;display:flex;align-items:center;overflow-x:auto;margin:0 0 4px;}
 .route-stop{display:flex;align-items:center;}
@@ -103,6 +101,22 @@ a{color:var(--sky);}
 .stop-label{font-family:var(--font-mono);font-size:7pt;color:var(--sand);white-space:nowrap;padding:0 8px;}
 .stop-label.start,.stop-label.end{color:var(--white);font-weight:600;}
 .route-line{flex:1;min-width:18px;height:2px;background:linear-gradient(to right,var(--ember),var(--rust));}
+/* MAP + ROUTE SIDE BY SIDE */
+.trip-head{display:flex;gap:10px;align-items:flex-start;margin:6px 0 4px;}
+.trip-head .map-img{margin:0;flex:1.7 1 300px;min-width:0;align-self:stretch;}
+.trip-head .map-img img{height:100%;object-fit:cover;}
+.trip-head .route-img{flex:1 1 150px;border:1px solid #D4D0C8;align-self:flex-start;}
+.trip-head .route-img img{width:100%;display:block;}
+@media(max-width:640px){.trip-head .route-img{align-self:auto;}}
+.trip-head .route-strip{flex:1 1 160px;flex-direction:column;align-items:flex-start;gap:0;overflow:visible;}
+.trip-head .route-strip .route-line{flex:none;width:2px;min-width:2px;height:15px;margin:2px 0 2px 4px;background:linear-gradient(to bottom,var(--ember),var(--rust));}
+@media(max-width:640px){
+  .trip-head{flex-direction:column;}
+  .trip-head .map-img{align-self:auto;}
+  .trip-head .map-img img{height:auto;}
+  .trip-head .route-strip{flex-direction:row;align-items:center;overflow-x:auto;}
+  .trip-head .route-strip .route-line{flex:1;width:auto;min-width:18px;height:2px;margin:0;background:linear-gradient(to right,var(--ember),var(--rust));}
+}
 
 /* OPTIONS */
 .options-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:8px 0;}
@@ -269,6 +283,7 @@ a{color:var(--sky);}
     </div>
   </div>
   <div class="day-body">
+    <div class="trip-head">
     <div class="map-img">
       <img src="images/day1-map.png" alt="Day 1 route — Denver to Medano Pass Primitive Road">
       <a class="map-open" href="https://www.google.com/maps/dir/Denver,+CO/Walsenburg,+CO/Great+Sand+Dunes+National+Park+Visitor+Center/37.82401,-105.45907" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
@@ -280,6 +295,7 @@ a{color:var(--sky);}
       <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Dunes Entrance</span></div><div class="route-line"></div>
       <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏕 Medano Pass Rd</span></div>
     </div>
+    </div><!-- /trip-head -->
 
     <div class="section-header"><h3>🌄 What Tonight Feels Like</h3><div class="section-rule"></div></div>
     <div class="feel-box">
@@ -431,6 +447,7 @@ a{color:var(--sky);}
     </div>
   </div>
   <div class="day-body">
+    <div class="trip-head">
     <div class="map-img">
       <img src="images/day2-map.png" alt="Day 2 route — Great Sand Dunes to Park Creek Road via the Conejos">
       <a class="map-open" href="https://www.google.com/maps/dir/Great+Sand+Dunes+National+Park+Visitor+Center/Alamosa,+CO/Antonito,+CO/37.13094,-106.34928/Platoro,+CO/Platoro+Reservoir,+CO" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
@@ -443,6 +460,7 @@ a{color:var(--sky);}
       <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Platoro</span></div><div class="route-line"></div>
       <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏕 Platoro Reservoir</span></div>
     </div>
+    </div><!-- /trip-head -->
 
     <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
     <div class="feel-box">
@@ -589,6 +607,7 @@ a{color:var(--sky);}
     </div>
   </div>
   <div class="day-body">
+    <div class="trip-head">
     <div class="map-img">
       <img src="images/day3-map.png" alt="Day 3 route — Park Creek Road to Durango via Wolf Creek Pass">
       <a class="map-open" href="https://www.google.com/maps/dir/Platoro+Reservoir,+CO/Stunner+Campground,+CO/Elwood+Pass,+CO/South+Fork,+CO/Wolf+Creek+Pass/Pagosa+Springs,+CO/Hampton+Inn+Durango,+3777+Main+Ave,+Durango,+CO" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
@@ -601,6 +620,7 @@ a{color:var(--sky);}
       <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Wolf Creek</span></div><div class="route-line"></div>
       <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏨 Durango</span></div>
     </div>
+    </div><!-- /trip-head -->
 
     <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
     <div class="feel-box">
@@ -736,17 +756,13 @@ a{color:var(--sky);}
     </div>
   </div>
   <div class="day-body">
+    <div class="trip-head">
     <div class="map-img">
       <img src="images/day4-map.png" alt="Day 4 route — Durango to Silverton and onto the Alpine Loop">
-      <a class="map-open" href="https://www.google.com/maps/dir/Durango,+CO/Molas+Pass/Silverton,+CO/Animas+Forks,+CO/Engineer+Pass" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
+      <a class="map-open" href="https://www.google.com/maps/dir/Durango,+CO/Silverton,+CO/Animas+Forks,+CO/Denver+Bridge,+Silverton,+CO/Oh%21+Point,+Co+Rd+2,+Ouray,+CO/Engineer+Pass+on+the+Alpine+Loop,+Lake+City,+CO/Ruby+Queen+Millsite,+Lake+City,+CO/Empire+Chief+Mine+and+Mill,+Lake+City,+CO/Rose+Lime+Kiln,+Co+Rd+20,+Lake+City,+CO" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
     </div>
-    <div class="route-strip">
-      <div class="route-stop"><span class="stop-dot start"></span><span class="stop-label start">Durango</span></div><div class="route-line"></div>
-      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Molas Pass</span></div><div class="route-line"></div>
-      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Silverton</span></div><div class="route-line"></div>
-      <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Animas Forks</span></div><div class="route-line"></div>
-      <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏕 Engineer Pass area</span></div>
-    </div>
+    <div class="route-img"><img src="images/day4-route.png" alt="Day 4 route stops: Durango, Silverton, Animas Forks, Denver Bridge, Oh! Point, Engineer Pass, Ruby Queen Millsite, Empire Chief Mine and Mill, Rose Lime Kiln"></div>
+    </div><!-- /trip-head -->
 
     <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
     <div class="feel-box">
@@ -904,6 +920,7 @@ a{color:var(--sky);}
     </div>
   </div>
   <div class="day-body">
+    <div class="trip-head">
     <div class="map-img">
       <img src="images/day5-map.png" alt="Day 5 — Alpine Loop exploration and American Basin / Handies Peak">
       <a class="map-open" href="https://www.google.com/maps/dir/Engineer+Pass/Lake+City,+CO/American+Basin+Trailhead/Handies+Peak" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
@@ -915,6 +932,7 @@ a{color:var(--sky);}
       <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">American Basin</span></div><div class="route-line"></div>
       <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">⛰ Handies Peak 14,058'</span></div>
     </div>
+    </div><!-- /trip-head -->
 
     <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
     <div class="feel-box">
@@ -1072,6 +1090,7 @@ a{color:var(--sky);}
     </div>
   </div>
   <div class="day-body">
+    <div class="trip-head">
     <div class="map-img">
       <img src="images/day6-map.png" alt="Day 6 — finish Alpine Loop, Million Dollar Highway to Ouray">
       <a class="map-open" href="https://www.google.com/maps/dir/Cinnamon+Pass/Animas+Forks,+CO/Silverton,+CO/Red+Mountain+Pass/Bear+Creek+Falls+Overlook/Ouray,+CO" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
@@ -1083,6 +1102,7 @@ a{color:var(--sky);}
       <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Red Mtn Pass</span></div><div class="route-line"></div>
       <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏨 Ouray</span></div>
     </div>
+    </div><!-- /trip-head -->
 
     <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
     <div class="feel-box">
@@ -1226,6 +1246,7 @@ a{color:var(--sky);}
     </div>
   </div>
   <div class="day-body">
+    <div class="trip-head">
     <div class="map-img">
       <img src="images/day7-map.png" alt="Day 7 — Ouray to Montrose and onto the Rimrocker Trail">
       <a class="map-open" href="https://www.google.com/maps/dir/Ouray,+CO/Montrose,+CO/Dry+Creek+Recreation+Area,+Montrose,+CO/Nucla,+CO/Naturita,+CO/Paradox+Valley,+CO" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
@@ -1238,6 +1259,7 @@ a{color:var(--sky);}
       <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Tabeguache crossing</span></div><div class="route-line"></div>
       <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏕 Epic Campsite mi 98.6</span></div>
     </div>
+    </div><!-- /trip-head -->
 
     <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
     <div class="feel-box">
@@ -1347,7 +1369,7 @@ a{color:var(--sky);}
         <div class="decision-row"><span class="decision-icon">🌊</span><span class="decision-trigger">Tabeguache high</span><span class="decision-arrow">→</span><span class="decision-action">Walk it first; 12–24″ is normal — keep momentum &amp; water out of the cab. If it's roaring, wait or reassess</span></div>
         <div class="decision-row"><span class="decision-icon">💨</span><span class="decision-trigger">Rim too windy</span><span class="decision-arrow">→</span><span class="decision-action">Back into the Uncompahgre NF timber — far more comfortable than the exposed Paradox ridge</span></div>
         <div class="decision-row"><span class="decision-icon">🕐</span><span class="decision-trigger">Late start from Ouray</span><span class="decision-arrow">→</span><span class="decision-action">Skip Black Canyon; camp Iron Springs or Columbine and finish to Moab over Days 8–9</span></div>
-        <div class="decision-row"><span class="decision-icon">🧭</span><span class="decision-trigger">Missed a junction</span><span class="decision-arrow">→</span><span class="decision-action">Rimrocker is signed (green/brown logo posts) but subtle — trust the GPX track, not the biggest road</span></div>
+        <div class="decision-row"><span class="decision-icon">🧭</span><span class="decision-trigger">Missed a junction</span><span class="decision-arrow">→</span><span class="decision-action">Rimrocker is signed (green/brown logo posts) but subtle — trust your OnX/Gaia track, not the biggest road</span></div>
       </div>
       <div class="fuel-box">
         <div class="fuel-header">⛽ Fuel Strategy</div>
@@ -1383,6 +1405,7 @@ a{color:var(--sky);}
     </div>
   </div>
   <div class="day-body">
+    <div class="trip-head">
     <div class="map-img">
       <img src="images/day8-map.png" alt="Day 8 — finish Rimrocker into Moab and out to a canyon rim camp">
       <a class="map-open" href="https://www.google.com/maps/dir/Paradox+Valley,+CO/Buckeye+Reservoir/La+Sal+Pass+Road/Moab,+UT/38.710668,-109.729128" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
@@ -1394,6 +1417,7 @@ a{color:var(--sky);}
       <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Black Ridge → Moab</span></div><div class="route-line"></div>
       <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏕 Canyon rim camp</span></div>
     </div>
+    </div><!-- /trip-head -->
 
     <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
     <div class="feel-box">
@@ -1519,6 +1543,7 @@ a{color:var(--sky);}
     </div>
   </div>
   <div class="day-body">
+    <div class="trip-head">
     <div class="map-img">
       <img src="images/day9-map.png" alt="Day 9 route — Moab to Salt Lake City">
       <a class="map-open" href="https://www.google.com/maps/dir/Moab,+UT/Green+River,+UT/Price,+UT/Soldier+Summit/Salt+Lake+City,+UT" target="_blank">🗺 OPEN IN GOOGLE MAPS →</a>
@@ -1530,6 +1555,7 @@ a{color:var(--sky);}
       <div class="route-stop"><span class="stop-dot"></span><span class="stop-label">Soldier Summit</span></div><div class="route-line"></div>
       <div class="route-stop"><span class="stop-dot end"></span><span class="stop-label end">🏁 Salt Lake City</span></div>
     </div>
+    </div><!-- /trip-head -->
 
     <div class="section-header"><h3>🌄 What Today Feels Like</h3><div class="section-rule"></div></div>
     <div class="feel-box">
@@ -1596,7 +1622,7 @@ a{color:var(--sky);}
 <!-- ════════ REFERENCE / APPENDIX ════════ -->
 <div class="ref-page" id="reference">
   <h2>Reference &amp; Appendix</h2>
-  <p style="font-size:9pt;color:var(--stone);font-style:italic;margin-bottom:4px;">Everything in one place for around the campfire: key coordinates, GPX downloads, road/ranger phone numbers, and where the photos come from.</p>
+  <p style="font-size:9pt;color:var(--stone);font-style:italic;margin-bottom:4px;">Everything in one place for around the campfire: key coordinates, road/ranger phone numbers, and where the photos come from.</p>
 
   <div class="ref-section">
     <h3>📍 Key Coordinates (cross-checked)</h3>
