@@ -40,3 +40,27 @@ you want a 2- or 3-up photo strip.
 Wikimedia Commons images are mostly CC-BY / CC-BY-SA / public domain. For a
 personal trip guide you're fine; if you ever publish it widely, keep a credits
 line. NPS / BLM / USFS photos are generally public domain.
+
+## Historic / mining photos to obtain (added for the new history sections)
+Free/archival sources for the Day 4–6 mining-history boxes. Wikimedia = free to reuse;
+Denver Public Library & History Colorado hold historic B&W photos (check rights per image).
+
+- **Animas Forks ghost town (Day 4)** — Duncan House, Kalamazoo House, street views:
+  Wikimedia https://commons.wikimedia.org/wiki/Category:Animas_Forks,_Colorado ·
+  Denver Public Library https://digital.denverlibrary.org/digital/search/searchterm/Animas%20Forks ·
+  History Colorado https://www.historycolorado.org/location/animas-forks
+- **Engineer Pass / Otto Mears toll road (Day 5)** —
+  Western Mining History https://westernmininghistory.com/2239/photos-of-the-otto-mears-toll-road/ ·
+  Wikimedia Otto Mears https://commons.wikimedia.org/wiki/Category:Otto_Mears
+- **Henson & Ute-Ulay Mine (Day 5)** —
+  Legends of America https://www.legendsofamerica.com/henson-colorado/ ·
+  History Colorado https://www.historycolorado.org/location/ute-ulay-mine-and-mill ·
+  Wikimedia Lake City https://commons.wikimedia.org/wiki/Category:Lake_City,_Colorado
+- **Red Mountain District / Yankee Girl Mine (Day 6)** —
+  Wikimedia https://commons.wikimedia.org/wiki/Category:Red_Mountain_Mining_District ·
+  Yankee Girl https://commons.wikimedia.org/wiki/Category:Yankee_Girl_Mine ·
+  Legends of America https://www.legendsofamerica.com/red-mountain-mining-district/ ·
+  Denver Public Library https://digital.denverlibrary.org/digital/search/searchterm/Yankee%20Girl%20Mine
+
+To drop these into the guide, save as e.g. `images/hist-animas-forks.jpg`, `hist-ute-ulay.jpg`,
+`hist-yankee-girl.jpg`, then tell me where to place them (the history boxes have room for a photo).
