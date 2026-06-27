@@ -1,0 +1,36 @@
+Build an overlanding trip itinerary HTML site with images, downloadable GPX tracks for OnX, Gaia, and Google maps. The site needs images of routes, not step by step directions, highly rated points of interest along the drive each day. Include POIs with walks < 3 miles on drive days and 6-8 miles at the destinations. Include dispersed camping sites with great views and protected sites if it's windy. search deeply for camping spots, look in jeep and overland forums, and the list of websites below. provide a list of images to scrape from websites with links so we can populate the guide. build summary descriptions and links to every element along the way so my wife and I can plan the next day's adventure after dinner around the camp fire. make sure all lat/long locations are verified accurate with 3 sources, google maps, the dyrt, alltrails, onx, gaia, etc... Include live daily weather forecasts.
+
+research camp fire restrictions in BLM, National forest, etc... along our route for this trip. add to each day a fire restriction box in the weather table and add a sunrise/sunset field to the table. keep the fields in the same style and size as the live weather boxes. If possible make fire restrictions live as they change often.
+
+Make a list of clickable lat/long links to every pin used in the guide
+For each day, make a list of clickable photo links to scrape into the guide
+
+
+Use /Users/brad-mbp/Desktop/PROJECTS/az-overland/index.html as a reference... make a new project called Colorado... million dollar highway and alpine loop.
+
+
+
+Use the following dates and locations starting from downtown denver:  
+
+21 june  - leave denver south  towards Medano pass. stay night near https://maps.app.goo.gl/7FepUaaeuqdyVneh6 and disperse camp
+
+22 june - easy morning chill, then play in great sand dunes NP. then drive towards https://maps.app.goo.gl/LVrEzTiZm86BQcZ5A and then take forest road fdr 250 near Mamouth to the https://www.trailsoffroad.com/US/colorado/trails/8613-park-creek-road stay night near mamouth dispersed camping
+
+23 june - finish trail and drive to Durango, Hampton Inn 3777 Main Ave, Durango, CO 81301 reservation 93580647
+
+24 june - drive million dollar highway to silverton, find alpine loop (do it clockwise) and find dispersed camping
+
+25 june - drive and explore more on Alpine Loop, dispersed camping
+
+26 june - finish loop and drive to Ouray and stay at Quality Inn 191 5th Ave,
+
+Ouray, CO, 81427, US reservation 38245206
+
+27 june - leave Ouray and drive thru Montrose to the Rimrocker and stay the night in dispersed camping
+
+28 june - possible extra day on rimrocker or finish rim rocker and stay night in Moab dispersed camping
+
+29 june - drive from moab to SLC
+
+
+🎯 FINAL BUILD SPEC (locked) 🔥 Design Balance Visual (inspiration) + Text (decision-making) * Photos = set the mood * Text = help you choose what tomorrow becomes * Links 📖 HOW EACH DAY WILL WORK (this is the key) 🌄 Top: “What Tomorrow Feels Like” * Large image (sets tone) * 2–3 sentence summary:    * What kind of day it is    * Energy level    * Why it’s special 🎯 Choose Your Day (3–4 curated options) Each option is structured like this: Option Example: “Easy Iconic Day” * Short description (what it feels like) * 2–3 stops * 1 hike (<3 mi) Why choose this: * Best payoff for least effort * Great if tired / arriving late Links: * Tap → Google Maps (trailhead, parking, etc.) 🥾 Short Hikes (the real value layer) Each one includes: * Distance * Why it’s worth it * What makes it unique * Crowd reality * Effort vs reward 👉 Not generic—this is where your trip gets elevated 🏕️ Camp Options (decision-ready) Clear, simple: * Best View: (amazing, but exposed?) * Protected: (wind-safe) * Easy Backup: (late arrival option) 🌅 Golden Hour * EXACT recommendation * Why it matters * Whether it’s worth crowds ⚠️ Quick Decisions * Wind → go here * Crowds → pivot here * Weather → avoid this 🗺️ MAPS (done correctly this time) Each day: * Simple visual map * Marked:    * Route    * Stops    * Camps * Designed for 2-second understanding 📍 LINKS (critical) Everything has: * Clean label * Tap → opens in Google Maps 🧭 BONUS LAYERS (still included) 🚙 Your Land Cruiser advantage * Where you can push deeper * Where NOT to (clay, sand, etc.) ⛽ Fuel logic (clean + visual) * 🌬️ Wind strategy * Where you’ll be miserable vs protected
